@@ -188,6 +188,21 @@ def _inject_workflow(graph, prompt, negative_prompt, width, height,
                 return graph[k]
         return None
 
+    # Keep the dedicated parameter node's widgets synchronized with Studio.
+    studio_values = {
+        "positive_prompt": prompt, "negative_prompt": negative_prompt,
+        "steps": steps, "cfg": cfg, "seed": seed, "width": width,
+        "height": height, "sampler_name": sampler_name, "scheduler": scheduler,
+        "denoise": denoise, "batch_size": batch_size,
+        "checkpoint": checkpoint or "", "filename_prefix": filename_prefix or "flask_web",
+    }
+    for node in graph.values():
+        if isinstance(node, dict) and node.get("class_type") == "FlaskViewerParameters":
+            node_inputs = node.setdefault("inputs", {})
+            for key, value in studio_values.items():
+                if value is not None:
+                    node_inputs[key] = value
+
     for node in graph.values():
         if not isinstance(node, dict):
             continue
@@ -702,6 +717,71 @@ def save_one_input(image_tensor, source_label, prompt_text, keep_history):
                 except OSError:
                     pass
             del _IMAGE_REGISTRY[:excess]
+
+# ---------- Studio parameter and output nodes ----------
+
+class FlaskViewerParameters:
+    """Expose Studio-controlled values as typed ComfyUI outputs."""
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {"required": {
+            "positive_prompt": ("STRING", {"default": "", "multiline": True}),
+            "negative_prompt": ("STRING", {"default": "", "multiline": True}),
+            "steps": ("INT", {"default": 20, "min": 1, "max": 200}),
+            "cfg": ("FLOAT", {"default": 7.0, "min": 0.0, "max": 30.0, "step": 0.1}),
+            "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
+            "width": ("INT", {"default": 512, "min": 64, "max": 4096, "step": 8}),
+            "height": ("INT", {"default": 512, "min": 64, "max": 4096, "step": 8}),
+            "sampler_name": ("STRING", {"default": "euler"}),
+            "scheduler": ("STRING", {"default": "normal"}),
+            "denoise": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01}),
+            "batch_size": ("INT", {"default": 1, "min": 1, "max": 8}),
+            "checkpoint": ("STRING", {"default": ""}),
+            "filename_prefix": ("STRING", {"default": "flask_web"}),
+        }}
+
+    RETURN_TYPES = ("STRING", "STRING", "INT", "FLOAT", "INT", "INT", "INT",
+                    "STRING", "STRING", "FLOAT", "INT", "STRING", "STRING")
+    RETURN_NAMES = ("positive_prompt", "negative_prompt", "steps", "cfg", "seed",
+                    "width", "height", "sampler_name", "scheduler", "denoise",
+                    "batch_size", "checkpoint", "filename_prefix")
+    FUNCTION = "run"
+    CATEGORY = "image/viewer"
+
+    def run(self, positive_prompt, negative_prompt, steps, cfg, seed, width,
+            height, sampler_name, scheduler, denoise, batch_size, checkpoint,
+            filename_prefix):
+        return (positive_prompt, negative_prompt, steps, cfg, seed, width,
+                height, sampler_name, scheduler, denoise, batch_size,
+                checkpoint, filename_prefix)
+
+
+class FlaskViewerOutput:
+    """Publish generated images to FlaskViewer and pass the tensor through."""
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {"required": {"image": ("IMAGE",)},
+                "optional": {"prompt_text": ("STRING", {"default": "", "multiline": True})}}
+
+    RETURN_TYPES = ("IMAGE",)
+    RETURN_NAMES = ("image",)
+    FUNCTION = "run"
+    CATEGORY = "image/viewer"
+    OUTPUT_NODE = True
+
+    def run(self, image, prompt_text=""):
+        cfg = load_config()
+        url, status = start_server(cfg["host"], cfg["port"])
+        if status == "running":
+            try:
+                save_one_input(image, "studio_output", prompt_text, cfg["keep_history"])
+            except Exception as e:
+                status = f"error saving image: {type(e).__name__}: {e}"
+                print(f"[FlaskViewerOutput] {status}", flush=True)
+        return {"ui": {"text": [f"{status} — {url}"]}, "result": (image,)}
+
 
 # ---------- Nodes ----------
 
