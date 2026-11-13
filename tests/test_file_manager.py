@@ -61,6 +61,14 @@ class FileManagerTests(unittest.TestCase):
         response = self.client.get("/api/library/preview?root=output&path=notes.txt")
         self.assertEqual(response.status_code, 415)
 
+    def test_scan_start_and_status_endpoints(self):
+        response = self.client.post("/api/library/scan")
+        self.assertEqual(response.status_code, 202)
+        job_id = response.get_json()["job_id"]
+        status = self.client.get("/api/library/scan/" + job_id)
+        self.assertEqual(status.status_code, 200)
+        self.assertIn(status.get_json()["status"], ("running", "completed"))
+
     def test_storage_summary_has_volume_list(self):
         response = self.client.get("/api/library/storage")
         self.assertEqual(response.status_code, 200)

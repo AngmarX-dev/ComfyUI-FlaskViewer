@@ -8,7 +8,7 @@ A ComfyUI custom node with a companion Flask interface for image history, genera
 - Integrated File Library for ComfyUI input, output, temp, and FlaskViewer image-history folders.
 - Search and sort directory contents, navigate folders, preview supported images, and download files.
 - Upload image files directly to the ComfyUI input directory.
-- View used/free/total capacity for detected system volumes. This is a capacity summary, not a recursive content scan.
+- View used/free/total capacity for detected system volumes and run a cancellable, read-only recursive scan of local fixed drives for largest files, top-level folder totals, extension usage, and access errors.
 - ComfyUI sidebar panel and node-based server controls remain available.
 
 ## Install
@@ -25,13 +25,16 @@ The browser is restricted to known ComfyUI directories (input, output, temp) and
 ### API
 - `GET /api/library/roots` — available managed directories.
 - `GET /api/library/storage` — filesystem capacity for detected volumes.
+- `POST /api/library/scan` — start one background scan across detected local fixed drives.
+- `GET /api/library/scan/<job_id>` — read progress and final results.
+- `POST /api/library/scan/<job_id>/cancel` — request cancellation.
 - `GET /api/library/browse?root=output&path=&q=&limit=100&offset=0` — browse a managed directory.
 - `GET /api/library/preview?root=output&path=subdir/image.png` — inline image preview.
 - `GET /api/library/download?root=output&path=subdir/file.ext` — download a file.
 - `POST /api/library/upload` — multipart upload to ComfyUI input; field name `files`.
 
 ## Safety
-The initial file manager is non-destructive: it does not delete, move, or rename existing files. Client-supplied paths are resolved and checked against the selected managed root. Symlinks are not followed.
+Storage scans are read-only and cancellable. They do not delete, move, rename, or modify files. The initial file manager is non-destructive: it does not delete, move, or rename existing files. Client-supplied paths are resolved and checked against the selected managed root. Symlinks are not followed.
 
 The FlaskViewer server has no authentication layer. Keep it bound to `127.0.0.1` unless you understand the implications of exposing it to a trusted network. Do not expose it directly to the public internet.
 

@@ -1,6 +1,10 @@
+import ctypes
+import heapq
 import os
 import shutil
+import stat
 import string
+import threading
 import time
 import uuid
 from PIL import Image, UnidentifiedImageError
@@ -12,6 +16,129 @@ UPLOAD_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".bmp", ".gif"}
 MAX_UPLOAD_BYTES = 64 * 1024 * 1024
 DEFAULT_PAGE_SIZE = 100
 MAX_PAGE_SIZE = 250
+_SCAN_LOCK = threading.Lock()
+_SCAN_JOBS = {}
+_SCAN_ACTIVE = None
+
+
+def _scan_roots():
+    if os.name != "nt":
+        return [os.path.abspath(os.sep)]
+    kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    kernel32.GetLogicalDrives.restype = ctypes.c_uint32
+    kernel32.GetDriveTypeW.argtypes = [ctypes.c_wchar_p]
+    kernel32.GetDriveTypeW.restype = ctypes.c_uint
+    mask = kernel32.GetLogicalDrives()
+    roots = []
+    for index, letter in enumerate(string.ascii_uppercase):
+        if not (mask & (1 << index)):
+            continue
+        drive = letter + ":\\"
+        if kernel32.GetDriveTypeW(drive) == 3:
+            roots.append(drive)
+    return roots
+
+
+def _is_reparse_point(entry_stat):
+    attributes = getattr(entry_stat, "st_file_attributes", 0)
+    flag = getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0x400)
+    return bool(attributes & flag)
+
+
+def _scan_worker(job_id, roots, cancel_event):
+    result = {"volumes": [], "totals": {"files": 0, "folders": 0, "bytes": 0},
+              "largest_files": [], "top_folders": [], "extensions": [],
+              "errors": [], "error_count": 0}
+    largest = []
+    folder_totals = {}
+    extension_totals = {}
+    error_samples = []
+
+    def record_error(path, exc):
+        result["error_count"] += 1
+        if len(error_samples) < 500:
+            error_samples.append({"path": path, "error": type(exc).__name__})
+
+    for root in roots:
+        if cancel_event.is_set():
+            break
+        volume = {"root": root, "files": 0, "folders": 0, "bytes": 0,
+                  "status": "scanning"}
+        try:
+            usage = shutil.disk_usage(root)
+            volume.update({"capacity": usage.total, "used": usage.used, "free": usage.free})
+        except OSError as exc:
+            record_error(root, exc)
+        stack = [(root, "[root files]")]
+        scanned_dirs = 0
+        while stack and not cancel_event.is_set():
+            current, top_name = stack.pop()
+            scanned_dirs += 1
+            try:
+                with os.scandir(current) as iterator:
+                    for entry in iterator:
+                        if cancel_event.is_set():
+                            break
+                        try:
+                            st = entry.stat(follow_symlinks=False)
+                            if entry.is_symlink() or _is_reparse_point(st):
+                                continue
+                            if entry.is_dir(follow_symlinks=False):
+                                bucket = entry.name if current == root else top_name
+                                volume["folders"] += 1
+                                result["totals"]["folders"] += 1
+                                folder_totals[(root, bucket)] = folder_totals.get((root, bucket), 0)
+                                stack.append((entry.path, bucket))
+                            elif entry.is_file(follow_symlinks=False):
+                                size = int(st.st_size)
+                                volume["files"] += 1
+                                volume["bytes"] += size
+                                result["totals"]["files"] += 1
+                                result["totals"]["bytes"] += size
+                                bucket_key = (root, top_name)
+                                folder_totals[bucket_key] = folder_totals.get(bucket_key, 0) + size
+                                ext = os.path.splitext(entry.name)[1].lower() or "[no extension]"
+                                item = extension_totals.setdefault(ext, {"extension": ext, "files": 0, "bytes": 0})
+                                item["files"] += 1
+                                item["bytes"] += size
+                                candidate = (size, entry.path)
+                                if len(largest) < 50:
+                                    heapq.heappush(largest, candidate)
+                                elif candidate > largest[0]:
+                                    heapq.heapreplace(largest, candidate)
+                        except OSError as exc:
+                            record_error(entry.path, exc)
+            except OSError as exc:
+                record_error(current, exc)
+            if scanned_dirs % 32 == 0:
+                with _SCAN_LOCK:
+                    job = _SCAN_JOBS.get(job_id)
+                    if job:
+                        job["current_path"] = current
+                        job["files"] = result["totals"]["files"]
+                        job["folders"] = result["totals"]["folders"]
+                        job["bytes"] = result["totals"]["bytes"]
+                        job["error_count"] = result["error_count"]
+        volume["status"] = "cancelled" if cancel_event.is_set() else "complete"
+        result["volumes"].append(volume)
+
+    result["largest_files"] = [
+        {"path": path, "size": size} for size, path in sorted(largest, reverse=True)
+    ]
+    result["top_folders"] = [
+        {"root": root, "folder": folder, "bytes": size}
+        for (root, folder), size in sorted(folder_totals.items(), key=lambda item: item[1], reverse=True)[:50]
+    ]
+    result["extensions"] = sorted(extension_totals.values(), key=lambda item: item["bytes"], reverse=True)[:40]
+    result["errors"] = error_samples
+    with _SCAN_LOCK:
+        job = _SCAN_JOBS.get(job_id)
+        if job:
+            job.update({"status": "cancelled" if cancel_event.is_set() else "completed",
+                        "current_path": None, "files": result["totals"]["files"],
+                        "folders": result["totals"]["folders"], "bytes": result["totals"]["bytes"],
+                        "error_count": result["error_count"], "result": result,
+                        "finished_at": int(time.time())})
 
 
 def _managed_roots(module_dir, image_dir):
@@ -95,6 +222,45 @@ def create_file_manager_blueprint(module_dir, image_dir):
     @bp.get("/api/library/storage")
     def library_storage():
         return jsonify({"volumes": _system_volumes(), "sampled_at": int(time.time())})
+
+    @bp.post("/api/library/scan")
+    def library_scan_start():
+        global _SCAN_ACTIVE
+        roots = _scan_roots()
+        if not roots:
+            abort(503, description="No supported local volumes were detected")
+        with _SCAN_LOCK:
+            if _SCAN_ACTIVE and _SCAN_JOBS.get(_SCAN_ACTIVE, {}).get("status") == "running":
+                abort(409, description="A storage scan is already running")
+            job_id = uuid.uuid4().hex
+            cancel_event = threading.Event()
+            _SCAN_JOBS[job_id] = {"id": job_id, "status": "running", "roots": roots,
+                                  "started_at": int(time.time()), "finished_at": None,
+                                  "current_path": None, "files": 0, "folders": 0,
+                                  "bytes": 0, "error_count": 0, "result": None,
+                                  "cancel_event": cancel_event}
+            _SCAN_ACTIVE = job_id
+        worker = threading.Thread(target=_scan_worker, args=(job_id, roots, cancel_event),
+                                  daemon=True, name="FlaskViewerStorageScan")
+        worker.start()
+        return jsonify({"job_id": job_id, "status": "running", "roots": roots}), 202
+
+    @bp.get("/api/library/scan/<job_id>")
+    def library_scan_status(job_id):
+        with _SCAN_LOCK:
+            job = _SCAN_JOBS.get(job_id)
+            if not job:
+                abort(404, description="Scan job not found")
+            return jsonify({key: value for key, value in job.items() if key != "cancel_event"})
+
+    @bp.post("/api/library/scan/<job_id>/cancel")
+    def library_scan_cancel(job_id):
+        with _SCAN_LOCK:
+            job = _SCAN_JOBS.get(job_id)
+            if not job:
+                abort(404, description="Scan job not found")
+            job["cancel_event"].set()
+        return jsonify({"ok": True, "status": "cancelling"})
 
     @bp.get("/api/library/browse")
     def library_browse():
