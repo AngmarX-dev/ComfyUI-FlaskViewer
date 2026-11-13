@@ -1,0 +1,12 @@
+﻿Windows Storage Cleanup Review
+Date: 11/13/2026 14:29:36
+Downloads candidate files: 48 / 26.38 GB
+Old Temp candidate files: 0 / 0 GB
+C:\Games folders for uninstall review: 4 / 18.9 GB
+
+No files were deleted during scanning.
+Game folders must be uninstalled through Windows Settings > Apps.
+Protected: AI model formats, known AI/project folders, Python/CUDA, BlueStacks, and Windows system locations.
+
+Files CSV: C:\Users\ehsan\Desktop\Storage-Cleanup-Review\Files-To-Review-20261113-142936.csv
+Games CSV: C:\Users\ehsan\Desktop\Storage-Cleanup-Review\Games-To-Uninstall-Review-20261113-142936.csv
