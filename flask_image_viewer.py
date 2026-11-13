@@ -218,20 +218,20 @@ def _inject_workflow(graph, prompt, negative_prompt, width, height,
                     bucket.append(nid)
 
         if seed is not None:
-            if "noise_seed" in inp:
+            if "noise_seed" in inp and not isinstance(inp["noise_seed"], (list, tuple)):
                 inp["noise_seed"] = int(seed)
-            elif "seed" in inp:
+            elif "seed" in inp and not isinstance(inp["seed"], (list, tuple)):
                 inp["seed"] = int(seed)
-        if steps:
+        if steps and "steps" in inp and not isinstance(inp["steps"], (list, tuple)):
             try: inp["steps"] = int(steps)
             except (TypeError, ValueError): pass
-        if cfg is not None and "cfg" in inp:
+        if cfg is not None and "cfg" in inp and not isinstance(inp["cfg"], (list, tuple)):
             inp["cfg"] = float(cfg)
-        if sampler_name and "sampler_name" in inp:
+        if sampler_name and "sampler_name" in inp and not isinstance(inp["sampler_name"], (list, tuple)):
             inp["sampler_name"] = sampler_name
-        if scheduler and "scheduler" in inp:
+        if scheduler and "scheduler" in inp and not isinstance(inp["scheduler"], (list, tuple)):
             inp["scheduler"] = scheduler
-        if denoise is not None and "denoise" in inp:
+        if denoise is not None and "denoise" in inp and not isinstance(inp["denoise"], (list, tuple)):
             inp["denoise"] = float(denoise)
 
     if prompt is not None:
@@ -261,11 +261,12 @@ def _inject_workflow(graph, prompt, negative_prompt, width, height,
         ct = node.get("class_type", "")
         inp = node.setdefault("inputs", {})
         if ct in latent_types:
-            if width is not None:
+            if width is not None and not isinstance(inp.get("width"), (list, tuple)):
                 inp["width"] = int(width)
-            if height is not None:
+            if height is not None and not isinstance(inp.get("height"), (list, tuple)):
                 inp["height"] = int(height)
-            if batch_size is not None and "batch_size" in inp:
+            if (batch_size is not None and "batch_size" in inp
+                    and not isinstance(inp["batch_size"], (list, tuple))):
                 inp["batch_size"] = int(batch_size)
         elif ct == "CheckpointLoaderSimple" and checkpoint:
             if "ckpt_name" in inp:
