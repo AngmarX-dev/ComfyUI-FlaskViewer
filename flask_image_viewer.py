@@ -14,6 +14,11 @@ from PIL import Image
 from flask import Flask, send_from_directory, jsonify, request, Response
 from werkzeug.serving import make_server
 
+try:
+    from .storage_audit import storage_bp
+except ImportError:
+    from storage_audit import storage_bp
+
 # ---------- Paths ----------
 
 _MODULE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -278,6 +283,7 @@ def _display_url(host, port):
 
 def _create_app():
     app = Flask(__name__, static_folder=_SITE_DIR, static_url_path="/static")
+    app.register_blueprint(storage_bp)
 
     @app.route("/")
     def index():
