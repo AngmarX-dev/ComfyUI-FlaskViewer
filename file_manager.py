@@ -2,6 +2,8 @@ import os
 import shutil
 import string
 import time
+import uuid
+from PIL import Image, UnidentifiedImageError
 from flask import Blueprint, abort, jsonify, request, send_file
 from werkzeug.utils import secure_filename
 
@@ -174,13 +176,23 @@ def create_file_manager_blueprint(module_dir, image_dir):
             size = upload.stream.tell()
             upload.stream.seek(0)
             if size > MAX_UPLOAD_BYTES:
-                abort(413, description="Each image must be 64 MB or smaller")
+                abort(413, description="The upload request is limited to 64 MB")
+            try:
+                with Image.open(upload.stream) as image:
+                    image.verify()
+            except (UnidentifiedImageError, OSError, ValueError):
+                abort(415, description="The uploaded file is not a valid image")
+            upload.stream.seek(0)
             base, ext = os.path.splitext(filename)
-            destination = os.path.join(target_dir, filename)
-            if os.path.exists(destination):
-                filename = f"{base}_{int(time.time())}_{len(saved) + 1}{ext}"
+            while True:
                 destination = os.path.join(target_dir, filename)
-            upload.save(destination)
+                try:
+                    output = open(destination, "xb")
+                    break
+                except FileExistsError:
+                    filename = f"{base}_{uuid.uuid4().hex[:8]}{ext}"
+            with output:
+                shutil.copyfileobj(upload.stream, output)
             saved.append({"name": filename, "size": os.path.getsize(destination)})
         return jsonify({"ok": True, "saved": saved}), 201
 
