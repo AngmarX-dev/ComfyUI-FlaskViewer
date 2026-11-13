@@ -14,14 +14,8 @@
         "10",
         3
       ],
-      "sampler_name": [
-        "10",
-        7
-      ],
-      "scheduler": [
-        "10",
-        8
-      ],
+      "sampler_name": "euler",
+      "scheduler": "normal",
       "denoise": [
         "10",
         9
