@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flask Viewer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">◈</div>
+      <div>
+        <h1>Flask Viewer</h1>
+        <div class="sub">
+          <span class="live-dot" id="live-dot"></span>
+          <span id="status">Connecting…</span>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="btn primary" id="gen-btn">✦ Generate</button>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" placeholder="Search prompts…" autocomplete="off">
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-src="all">All</button>
+      </div>
+      <button class="btn" id="sort-btn">↓ Newest</button>
+      <div class="count-pill"><span id="count">0</span> images</div>
+      <button class="btn" id="settings-btn">⚙ Settings</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid" id="grid"></div>
+    <div class="empty-state" id="empty-state">
+      <svg viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="2"/>
+        <circle cx="9" cy="9" r="2"/>
+        <path d="m21 15-5-5L5 21"/>
+      </svg>
+      <h2 id="empty-title">No images yet</h2>
+      <p id="empty-text">Click <b>✦ Generate</b> or run a workflow.</p>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lb-top">
+      <div class="lb-info" id="lb-info"></div>
+      <div class="lb-actions">
+        <button class="icon-btn" id="lb-slideshow" title="Slideshow (Space)">▶</button>
+        <a class="icon-btn" id="lb-download" download title="Download">↓</a>
+        <button class="icon-btn" id="lb-copy" title="Copy link">⧉</button>
+        <button class="icon-btn" id="lb-close" title="Close (Esc)">✕</button>
+      </div>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <button class="lb-nav lb-prev" id="lb-prev">‹</button>
+      <img id="lb-img" src="" alt="">
+      <button class="lb-nav lb-next" id="lb-next">›</button>
+    </div>
+    <div class="lb-thumbs" id="lb-thumbs"></div>
+    <div class="lb-hint">
+      <kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>Esc</kbd> close · <kbd>Space</kbd> slideshow
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-card">
+      <h2>Server settings</h2>
+      <label>Host <input id="set-host" type="text" placeholder="127.0.0.1"></label>
+      <label>Port <input id="set-port" type="number" min="1" max="65535"></label>
+      <label>Keep history <input id="set-keep" type="number" min="1" max="1000"></label>
+      <div class="drawer-actions">
+        <button class="btn primary" id="set-save">Save</button>
+        <button class="btn primary" id="set-restart">Save &amp; Restart</button>
+        <button class="btn" id="set-close">Close</button>
+      </div>
+      <p class="hint" id="set-hint">Host <code>0.0.0.0</code> allows LAN access.</p>
+    </div>
+  </div>
+
+  <div class="drawer" id="gen-drawer" hidden>
+    <div class="drawer-card wide">
+      <h2>✦ Generate</h2>
+      <label>Workflow <select id="gen-workflow"></select></label>
+      <label>Prompt (drives the output image)
+        <textarea id="gen-prompt" rows="3" placeholder="a beautiful landscape, sunset, cinematic…"></textarea>
+      </label>
+      <label>Negative prompt (what to avoid in the output)
+        <textarea id="gen-neg" rows="2" placeholder="blurry, low quality…"></textarea>
+      </label>
+      <div class="row">
+        <label>Width <input id="gen-width" type="number" min="64" max="4096" step="8" value="512"></label>
+        <label>Height <input id="gen-height" type="number" min="64" max="4096" step="8" value="512"></label>
+        <label>Seed <input id="gen-seed" type="number" min="0" value="0" title="0 = random"></label>
+      </div>
+      <div class="row">
+        <label>Steps <input id="gen-steps" type="number" min="1" max="200" value="20"></label>
+        <label>CFG <input id="gen-cfg" type="number" min="0" max="30" step="0.1" value="7"></label>
+      </div>
+      <label>Input image(s) — used by img2img workflows (does not affect txt2img output)
+        <input id="gen-files" type="file" accept="image/*" multiple>
+      </label>
+      <div class="drawer-actions">
+        <button class="btn primary" id="gen-run">Generate</button>
+        <button class="btn" id="gen-close">Close</button>
+      </div>
+      <div class="hint" id="gen-status"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

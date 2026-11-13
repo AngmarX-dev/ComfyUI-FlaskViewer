@@ -1,0 +1,7 @@
+{
+  "host": "127.0.0.1",
+  "port": 8189,
+  "keep_history": 50,
+  "comfy_url": "",
+  "comfy_input_dir": ""
+}
