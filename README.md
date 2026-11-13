@@ -34,7 +34,7 @@ The browser is restricted to known ComfyUI directories (input, output, temp) and
 - `POST /api/library/upload` — multipart upload to ComfyUI input; field name `files`.
 
 ## Safety
-Storage scans are read-only and cancellable. They do not delete, move, rename, or modify files. The initial file manager is non-destructive: it does not delete, move, or rename existing files. Client-supplied paths are resolved and checked against the selected managed root. Symlinks are not followed.
+Storage scans are read-only and cancellable. They enumerate detected local fixed volumes in a background thread, retain bounded samples of the largest files and access errors, and do not delete, move, rename, or modify files. Reported enumerated sizes can differ from Explorer due to hard links, sparse/compressed files, and access restrictions. The initial file manager is non-destructive: it does not delete, move, or rename existing files. Client-supplied paths are resolved and checked against the selected managed root. Symlinks are not followed.
 
 The FlaskViewer server has no authentication layer. Keep it bound to `127.0.0.1` unless you understand the implications of exposing it to a trusted network. Do not expose it directly to the public internet.
 

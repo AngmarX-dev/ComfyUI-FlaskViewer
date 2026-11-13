@@ -1,6 +1,7 @@
 import os
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from flask import Flask
 
@@ -62,7 +63,8 @@ class FileManagerTests(unittest.TestCase):
         self.assertEqual(response.status_code, 415)
 
     def test_scan_start_and_status_endpoints(self):
-        response = self.client.post("/api/library/scan")
+        with patch("file_manager._scan_roots", return_value=[self.output_dir]):
+            response = self.client.post("/api/library/scan")
         self.assertEqual(response.status_code, 202)
         job_id = response.get_json()["job_id"]
         status = self.client.get("/api/library/scan/" + job_id)

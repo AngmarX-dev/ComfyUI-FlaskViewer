@@ -98,6 +98,10 @@ def _scan_worker(job_id, roots, cancel_event):
                                 bucket_key = (root, top_name)
                                 folder_totals[bucket_key] = folder_totals.get(bucket_key, 0) + size
                                 ext = os.path.splitext(entry.name)[1].lower() or "[no extension]"
+                                if len(ext) > 32:
+                                    ext = "[long extension]"
+                                if ext not in extension_totals and len(extension_totals) >= 256:
+                                    ext = "[other]"
                                 item = extension_totals.setdefault(ext, {"extension": ext, "files": 0, "bytes": 0})
                                 item["files"] += 1
                                 item["bytes"] += size
@@ -232,6 +236,9 @@ def create_file_manager_blueprint(module_dir, image_dir):
         with _SCAN_LOCK:
             if _SCAN_ACTIVE and _SCAN_JOBS.get(_SCAN_ACTIVE, {}).get("status") == "running":
                 abort(409, description="A storage scan is already running")
+            for old_id in list(_SCAN_JOBS):
+                if len(_SCAN_JOBS) >= 5 and _SCAN_JOBS[old_id].get("status") != "running":
+                    _SCAN_JOBS.pop(old_id, None)
             job_id = uuid.uuid4().hex
             cancel_event = threading.Event()
             _SCAN_JOBS[job_id] = {"id": job_id, "status": "running", "roots": roots,
