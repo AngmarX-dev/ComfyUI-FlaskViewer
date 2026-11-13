@@ -2,7 +2,7 @@ import threading
 import time
 
 from .flask_image_viewer import (
-    FlaskImageViewer, FlaskViewerStop,
+    FlaskImageViewer, FlaskViewerStop, FlaskViewerParameters, FlaskViewerOutput,
     load_config, save_config, server_status,
     start_server, stop_server,
 )
@@ -10,10 +10,14 @@ from .flask_image_viewer import (
 NODE_CLASS_MAPPINGS = {
     "FlaskImageViewer": FlaskImageViewer,
     "FlaskViewerStop": FlaskViewerStop,
+    "FlaskViewerParameters": FlaskViewerParameters,
+    "FlaskViewerOutput": FlaskViewerOutput,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "FlaskImageViewer": "Flask Image Viewer",
     "FlaskViewerStop": "Flask Viewer Stop",
+    "FlaskViewerParameters": "FlaskViewer Parameters",
+    "FlaskViewerOutput": "FlaskViewer Output",
 }
 
 WEB_DIRECTORY = "./web"
