@@ -26,13 +26,16 @@ def _fixed_drives():
     """Return fixed Windows drive roots; portable fallback for non-Windows."""
     roots = []
     if os.name == "nt":
-        mask = ctypes.windll.kernel32.GetLogicalDrives()
+        kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+        kernel32.GetDriveTypeW.argtypes = [ctypes.c_wchar_p]
+        kernel32.GetDriveTypeW.restype = ctypes.c_uint
+        mask = kernel32.GetLogicalDrives()
         for i in range(26):
             if mask & (1 << i):
                 root = f"{chr(65+i)}:\\"
                 try:
                     # DRIVE_FIXED = 3; ignore removable/network by default.
-                    if ctypes.windll.kernel32.GetDriveTypeW(root) == 3:
+                    if kernel32.GetDriveTypeW(root) == 3:
                         roots.append(root)
                 except Exception:
                     roots.append(root)
@@ -69,7 +72,10 @@ def _is_reparse_or_link(path, entry=None):
         if entry is not None and entry.is_symlink():
             return True
         if os.name == "nt":
-            attrs = ctypes.windll.kernel32.GetFileAttributesW(str(path))
+            kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+            kernel32.GetFileAttributesW.argtypes = [ctypes.c_wchar_p]
+            kernel32.GetFileAttributesW.restype = ctypes.c_uint32
+            attrs = kernel32.GetFileAttributesW(str(path))
             if attrs != -1 and (attrs & 0x400):  # FILE_ATTRIBUTE_REPARSE_POINT
                 return True
         return False
@@ -83,6 +89,12 @@ def _scan_worker(job_id, roots):
     ext_sizes = defaultdict(int)
     largest = []
     errors = []
+    error_count = 0
+    def record_error(path, exc):
+        nonlocal error_count
+        error_count += 1
+        if len(errors) < 5000:
+            record_error(path, exc)
     scanned_bytes = 0
     files = folders = 0
     started = time.monotonic()
@@ -129,10 +141,10 @@ def _scan_worker(job_id, roots):
                             except Exception as exc:
                                 errors.append({"path": path, "error": str(exc)[:300]})
                 except (PermissionError, FileNotFoundError, NotADirectoryError, OSError) as exc:
-                    errors.append({"path": current, "error": str(exc)[:300]})
+                    record_error(current, exc)
                 with _LOCK:
                     job.update(files=files, folders=folders, scanned_bytes=scanned_bytes,
-                               errors_count=len(errors), current_path=current,
+                               errors_count=error_count, current_path=current,
                                elapsed_seconds=round(time.monotonic()-started, 1))
         result_files = [
             {"size_bytes": x[0], "size_human": _format_bytes(x[0]), "path": x[1],
@@ -148,8 +160,8 @@ def _scan_worker(job_id, roots):
             for e, n in sorted(ext_sizes.items(), key=lambda kv: kv[1], reverse=True)[:_MAX_EXTENSIONS]
         ]
         job["results"] = {"largest_files": result_files, "top_folders": result_dirs,
-                          "extensions": result_ext, "errors": errors[:5000],
-                          "errors_truncated": len(errors) > 5000}
+                          "extensions": result_ext, "errors": errors,
+                          "errors_truncated": error_count > len(errors), "total_errors": error_count}
         job["status"] = "cancelled" if job.get("cancel_requested") else "completed"
     except Exception as exc:
         job["status"] = "failed"
