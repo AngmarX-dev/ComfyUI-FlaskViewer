@@ -14,6 +14,8 @@ from PIL import Image
 from flask import Flask, send_from_directory, jsonify, request, Response
 from werkzeug.serving import make_server
 
+from .file_manager import create_file_manager_blueprint
+
 # ---------- Paths ----------
 
 _MODULE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -278,10 +280,16 @@ def _display_url(host, port):
 
 def _create_app():
     app = Flask(__name__, static_folder=_SITE_DIR, static_url_path="/static")
+    app.config["MAX_CONTENT_LENGTH"] = 64 * 1024 * 1024
+    app.register_blueprint(create_file_manager_blueprint(_MODULE_DIR, _ensure_dirs))
 
     @app.route("/")
     def index():
         return send_from_directory(_SITE_DIR, "index.html")
+
+    @app.route("/library")
+    def library():
+        return send_from_directory(_SITE_DIR, "library.html")
 
     @app.route("/ping")
     def ping():
