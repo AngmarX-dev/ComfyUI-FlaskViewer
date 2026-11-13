@@ -1,0 +1,1066 @@
+﻿WINDOWS STORAGE AUDIT
+Date: 11/13/2026 14:15:12
+Computer: EHSAN
+User: ehsan
+PowerShell: 5.1.26100.9711
+
+IMPORTANT:
+This script is READ ONLY.
+No files or folders are deleted or modified.
+
+===========================================================================
+1. SYSTEM INFORMATION
+===========================================================================
+
+
+Caption     : Microsoft Windows 11 Pro
+Version     : 10.0.26200
+BuildNumber : 26200
+RAM_GB      : 23.78
+FreeRAM_GB  : 9.03
+
+
+
+
+
+
+Name                      : 12th Gen Intel(R) Core(TM) i5-12450HX
+NumberOfCores             : 8
+NumberOfLogicalProcessors : 12
+
+
+
+
+
+===========================================================================
+2. DRIVE INFORMATION
+===========================================================================
+
+Drive TotalGB UsedGB FreeGB UsedPercent
+----- ------- ------ ------ -----------
+C:     475.82 432.41  43.41       90.88
+D:     698.62 215.14 483.48       30.79
+
+
+
+
+===========================================================================
+3. TARGET FOLDER INVENTORY
+===========================================================================
+
+Root                              Folder                                                                         FileCount SizeGB Category          
+----                              ------                                                                         --------- ------ --------          
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\python                                                   135407 20.298 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Compressed                                                34709 18.787 USER FILE - REVIEW
+C:\Games                          C:\Games\Blur                                                                        126  7.134 GAME - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Video                                                        42   6.89 USER FILE - REVIEW
+C:\Games                          C:\Games\Hello Neighbor                                                             7859  6.043 GAME - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads [ROOT FILES]                                                472   5.91 USER FILE - REVIEW
+C:\Games                          C:\Games\Minecraft Dungeons                                                          274  5.679 GAME - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Programs                                                    179  4.785 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents [ROOT FILES]                                                 83  3.803 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\local                                                      6610  3.054 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\StaxRip-v2.50.8-x64                                        3907  2.741 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\u3nncrex                                           470  2.734 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\EOW_Game                                                  38448  2.349 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Kali Linux                                                   37  1.099 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Telegram Desktop                                            185  0.971 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Cars.2-BlackBox-Par30Game                                    12  0.917 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Virtual Machines                                             40  0.768 USER FILE - REVIEW
+C:\tmp                            C:\tmp [ROOT FILES]                                                                  352  0.702 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\ffmpeg-8.1.2-full_build                                      45   0.69 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\The Long Drive                                              184  0.663 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\QUEM                                                      11391  0.586 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\MultiTalk-main                                             1464   0.54 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\VMware.Workstation.Pro.15.5.6                                 3  0.539 USER FILE - REVIEW
+C:\OneDriveTemp                   C:\OneDriveTemp\MSOCache                                                              49  0.536 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\vscode-stable-user-x64                               3  0.266 TEMP - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\VoidOS-main                                               13046  0.238 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\98-master                                                 17604  0.229 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\ThreeCraft-master                                         28167  0.228 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\python-no-ai                                                285  0.171 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\pphh1d1q.ryh                                      1051  0.169 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\1yp2y5nv.viy                                      1051  0.169 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\y5312v3b.o0v                                      1051  0.169 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\jrllalsw.jix                                      1051  0.169 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\mvguccnu.shs                                      1051  0.169 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ueta2tio.ksa                                       969  0.138 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\nusccxxb.w3u                                       969  0.138 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\raxc3uni.mrj                                       969  0.138 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\dqm12yeg.510                                       969  0.138 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\cxf4zdzc.lsc                                       969  0.138 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ow0bhxce.mip                                       969  0.138 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\OptiScaler-DLSSNR-PreSR-Multipass-main                      928  0.116 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\DLSS 5                                                        3  0.107 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\template-mod-template-1.21.11                               452  0.095 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Paradox Interactive                                         428  0.082 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Remote.Utilities.Viewer.7.7.3.0                               4  0.076 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\VS                                                   3  0.069 TEMP - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\R-Studio.9.5.191580.Technician                                4  0.069 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\fren-5.2.4                                                    7  0.069 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Project EA                                                 2459  0.066 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Documents                                                    19  0.061 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Disk.Drill.Enterprise.v6.0.1054.0.x64_p30download.com         5   0.06 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\AngmarX                                                    3192  0.057 USER FILE - REVIEW
+C:\Games                          C:\Games\Goldberg Emu Simplified                                                      48  0.054 GAME - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Taranom-WorkPlace                                           313  0.044 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Music Maker                                                  11  0.043 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\dxvk-3.1                                                     11  0.043 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\New Image 1                                                  41  0.039 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\PCSX2                                                        23  0.039 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\t-rex-0.26.8-win                                             35  0.037 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\VNC.Connect.Enterprise.7.16.0                                 7  0.032 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Stronghold Crusader                                          30   0.03 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\New Image                                                    20  0.027 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\LionOS                                                       32  0.026 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\research-shimi                                               10  0.026 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp [ROOT FILES]                                        78  0.026 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\CF-Auto-Root-p4noterf-p4noterfxx-gtn8000                      5  0.025 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Games                                                     83  0.025 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\TheLongDrive                                                 35  0.024 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\miniZ_v2.5e_win-x64                                           6  0.023 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\SoundTrack                                                   28  0.021 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Music                                                        10  0.018 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\DLSS multi FG for RTX 20-30-40 GPU                            3  0.015 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\ApkTool.2.4.0_YasDL.com                                       4  0.015 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Cards                                                         6  0.015 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Images                                                       38  0.014 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\background-remover-output                                    17  0.013 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Internet.Download.Manager.6.43.10.0                           5  0.012 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Mods                                                      83  0.011 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Odin3_v3.14.4                                                 7   0.01 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\HDD.Regenerator.2024.v20.24.0.0                               5   0.01 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\stick-fighter-master                                       2913   0.01 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Need for Speed(TM) Payback                                   29  0.009 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\ADM                                                          17  0.009 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\nveyj2r5.e4u                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\lubnewk4.3zx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ofgkkbdj.c0p                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\lpkmhyu3.kpx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ntxr2guq.fjr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\lpz20cpe.gob                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\nrcov3yo.o41                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\noku4v35.y02                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\nawi12im.5ja                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\m3twcdnc.xxu                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\n5u3u1it.fzc                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\mthkeatz.mmh                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\eah00ros.vdc                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\enqkqntc.hac                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\dsn1jvkx.zqp                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\dwokwlfm.bxx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\eygkm5er.5tl                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\fx3j0brt.bww                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\gptfm2as.fie                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\fa2yboue.tey                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\fied5jue.uqh                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\dhrfwtq5.okr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\cmed3gwz.i1v                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ct2nupkn.1uz                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\botlh2r0.bkg                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\bqvob1su.j4v                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\d02n4jmq.sf3                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\d5thk0dc.0zh                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\dd2f2sk5.sxc                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\d1x1qz2g.hxb                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\d4lg1nix.j0d                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\jt43jrcf.xhe                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\kx13snmw.mxn                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\iufim4ju.dlr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\jpssrxql.qzd                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\kxyibchg.2ah                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\llb2eyje.i3g                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\lns3uln0.q5e                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\l20z2rr1.w4h                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\l2tddblw.i3m                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\irniptke.z5s                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\h1adosbu.vxj                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\hat2ewhb.qyj                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\gwepnvkb.skz                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\gwgdfebh.yzg                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\hx3hzfhu.xpj                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\i0xenbje.ved                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\inorhznr.tll                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\hyebu1o2.5y0                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\i0axcgsj.tjs                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\vpy4hn5h.5ct                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\vggpdvbz.mbu                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\v5strtlh.f5g                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\vt2jk5q0.iil                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\wmq2mcng.2j3                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\wk35m0n5.ihi                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\wesuar3i.qby                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\v0fpv1my.0y3                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ttz2dz15.umx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tt0pphhi.bpd                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tqpsa2vm.qow                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ukadtlea.1i3                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\utti0dpr.myp                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\uro0hamo.oux                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\unh4dhf2.rug                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\wnjwqnad.xst                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\yahbbob4.oib                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\y4wqy21g.uey                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\y4eqjlei.gmz                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ypk1aqvs.jhx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\zlbexf4r.33i                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\zezzndre.b2c                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ytufceb5.2bd                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\xwy4o2vh.gx4                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\wsmtgep4.afh                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\wrps3hup.i3j                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\wpap1p11.zfz                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ww2ydx23.4g1                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\xvsipcym.rgk                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\x5i1dr3h.bad                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\x2mancnj.3w3                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tfeiafxp.e4c                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\qgwzvnlg.gfq                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\q2esb2lv.dwy                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ptn1ghyt.qlp                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\qlzv31mp.a1p                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\qpuvnhkb.c15                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\qowndytg.mpi                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\qns0noxa.1h3                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\prl5ylt1.b1s                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ouvmmsq1.3gu                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\onh2h4g4.liu                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ohlixlqt.erw                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\oyq55ekj.1xy                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\pmqewckj.chi                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\pj21aran.frh                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\pi2unr5q.5ci                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\quvqsjmq.gjs                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\siynxfh1.bfd                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\sbk3qrml.r00                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\rztttgew.olk                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\skm1uv22.en0                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tbkevah0.5dg                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\t42rfhpo.iph                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\slkqi4w4.k51                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ruelsj3b.glu                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ro0hdtf1.ksv                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\rcaji320.j4a                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\rb10o4pq.wnz                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\rpa2udcd.r3d                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ru35h03x.snr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\rtben5kc.lfc                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\rs2kbldc.itr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\2jc3c10a.qje                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\4t35zvex.053                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\4mu2sg24.k0g                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\451ksfbd.ved                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\4ibd2doo.jjx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\5e2wfk4v.lod                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\5hlq01vz.tdd                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\1mjzisbx.lv5                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\4vfrwz2q.i0w                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\51tyo5bf.eso                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\2vam43zf.m1a                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\2xcvn0zj.trj                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\2taapawn.3ed                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\2mehkdao.x4j                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\2oju5kg3.w3r                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\3hm01u3l.jne                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\3migci5a.sm4                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\3ceixdyo.tjr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\33kyhyia.0eh                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\34ysxar3.htx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\1iivoaea.u0m                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\amd0ykhy.lqr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\auuy1eby.0yr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\0y1wutyh.qyw                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\0dyrvrf0.gwb                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\beu5fvew.wsu                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\bljxazb3.dky                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\bckalv1h.iqj                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\bebv5esx.za3                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\1hz3jm1o.saf                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\a0ytmx10.1pr                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\5jt2nm1t.gwc                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\1dj0fqsi.hg5                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\0zae5vor.tkx                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\aaoiy1q5.f0e                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\11pjuvd4.nfu                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\a25ttmrk.0hj                                         3  0.008 TEMP - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\PuTTY.0.83                                                    3  0.007 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\FrameView                                                     5  0.007 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Windows 10                                                  117  0.007 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Assetto Corsa Competizione                                   63  0.007 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\xmrig-6.24.0                                                 10  0.006 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\TrackmaniaTurbo                                              19  0.006 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\CrystalDiskInfo.9.9.0                                         2  0.006 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Process.Lasso.Pro.18.2.0.50                                   7  0.006 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Taranom-WorkPlace-design-iranian-heritage-luxury            271  0.005 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\comfyui_flask_viewer                                10  0.004 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\64-bit                                                        2  0.004 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\NFS-VltEd 4.6                                                 5  0.003 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\WinRAR.7.12.x64                                               4  0.003 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\GUI                                                          15  0.003 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Command and Conquer Generals Zero Hour Data                  62  0.003 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Bitsum.ParkControl.Pro.5.5.4.4                                6  0.003 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\StickFightTheGameTrainer-master                              86  0.002 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Astray-master                                                12  0.002 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\3D model                                                      1  0.002 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\fern-wifi-cracker-master                                     79  0.002 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\CreativeCloud                                        1  0.002 TEMP - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\bounce-blade-kotlin-browser                                   2  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\old                                                           2  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Proxy Studios                                                12  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Sound Recordings                                              1  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\blender                                                       3  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\NFS Carbon                                                    3  0.001 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\Diagnostics                                          6  0.001 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\NFS ProStreet                                                 2  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\LionOS                                                       14  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Gameloft                                                     20  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\KMS.Activator.v6.0.0                                          4  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\samples                                                       3  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\unlimited-claude-AI-main                                      5  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Command and Conquer Generals Data                            15  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Command and Conquer 3 Tiberium Wars                           1  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\CPY_SAVES                                                    10  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Stronghold Legends                                            6  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Studio Pro                                                  230  0.001 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\NBTExplorer-2.8.0                                             6  0.001 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpk19nme1s                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Criterion Games                                               3      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Crack+                                                        2      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpauqips5_                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\torchinductor_ehsan                                  0      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpe37sudrn                                          0      0 TEMP - REVIEW     
+C:\OneDriveTemp                   C:\OneDriveTemp [ROOT FILES]                                                           1      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpwdnozm3k                                          0      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpk59x1k9t                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpo4n6ud6h                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmp_8jg9ky_                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmp_kfncnnz                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpyzqmbf9c                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpd0_rqfib                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpb0389h4s                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Release_x64                                                   5      0 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Rec 0014 - Trim.mp4_temp                                      5      0 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\STEAM-KEYS-VALIDATOR-master                                  20      0 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\void-os-website-main                                          4      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\WPF                                                  0      0 TEMP - REVIEW     
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\coin                                                         14      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\zjo320hu.2hy                                         0      0 TEMP - REVIEW     
+C:\Games                          C:\Games [ROOT FILES]                                                                  1      0 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\Quiz                                                         34      0 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\New folder                                                    0      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\bionic                                                        1      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\AutoHotkey                                                    3      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\bonsai                                                        2      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\chat                                                          2      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Chart Work                                                    3      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\ACC Connector                                                 4      0 USER FILE - REVIEW
+C:\Users\ehsan\Downloads          C:\Users\ehsan\Downloads\IDM_6.4x_Crack_v20.4                                          2      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\vscode-typescript                                    0      0 TEMP - REVIEW     
+C:\OneDriveTemp                   C:\OneDriveTemp\S-1-5-21-3905192489-133496913-3424293415-1001                          0      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Adobe                                                         0      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmpao5u28wq                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\v2ray_config_generator                                        2      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\NGL                                                  5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\node-compile-cache                                   0      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Visual Studio 18                                              1      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\msedgeedge_BITS_20216_1972951891                     1      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\msedgeedge_BITS_20900_1025815835                     1      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\WALL-E                                                        1      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\ping-display-mod-with-wrapper                                 9      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\PATAMAT                                                       0      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\NFS Most Wanted Backups                                       0      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\R-TT                                                          0      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\NuGetScratch                                         0      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Source Code                                                 255      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Searcher                                                     72      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\D76E.tmp                                             0      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\DefaultCompany                                       0      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\5j1i1p2y.zm4                                         1      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\Adobe                                                0      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\chromium_chrome_BITS_16996_2096663195                1      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\chromium_chrome_BITS_18564_1114011938                1      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\AdobeVulcan                                          1      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\wq                                                            1      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\WindowsPowerShell                                             5      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\MessagingAddin                                       0      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Xenia                                                         1      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\DuckDuckGo                                           7      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\ejb4o0o0.e3v                                         0      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\4nxhevke.qki                                         1      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\IISExpress                                                    3      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Google meet                                                   7      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Extention                                                    13      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\KONAMI                                                        3      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\MadOutIceStorm                                                1      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\logs                                                          1      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\LionOS-main                                                  23      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Custom Office Templates                                       0      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmp55wyahjh                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\tmp9axnzy8z                                          5      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\deepseek-harness                                              0      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\steam                                                0      0 TEMP - REVIEW     
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\system-commandline-sentinel-files                    1      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Disney Interactive Studios                                    5      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Web Sites                                                  5      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Videos                                                     0      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Shapes                                                     3      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\python-languageserver-cancellation                   0      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\NFS Most Wanted                                               4      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\NFS Carbon Backups                                            0      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\pwycxicw.bql                                         1      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Mount&Blade Warband Savegames                                 0      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\Mount&Blade Warband                                           1      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\minecraft-js-clone                                            5      0 USER FILE - REVIEW
+C:\Users\ehsan\AppData\Local\Temp C:\Users\ehsan\AppData\Local\Temp\Rar$DRa19664.12060.rartemp                           0      0 TEMP - REVIEW     
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Pictures                                                   0      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Music                                                      0      0 USER FILE - REVIEW
+C:\Users\ehsan\Documents          C:\Users\ehsan\Documents\My Cheat Tables                                               0      0 USER FILE - REVIEW
+
+
+
+
+===========================================================================
+4. LARGE FILES OVER 300 MB
+===========================================================================
+
+SizeGB Extension    Category             LastWrite              Path                                                                                                                                                  
+------ ---------    --------             ---------              ----                                                                                                                                                  
+ 3.972 .safetensors AI MODEL - PRESERVE  8/12/2025 10:49:53 AM  C:\Users\ehsan\Documents\python\deepseek\sd.webui\webui\models\Stable-diffusion\v1-5-pruned-emaonly.safetensors                                       
+ 2.396 .rar         USER FILE - REVIEW   11/11/2026 6:28:41 PM  C:\Users\ehsan\Downloads\Compressed\Nomad.Drive.Build.02112026(Gold-Team.Org).rar                                                                     
+ 1.959 .rar         USER FILE - REVIEW   8/14/2026 11:10:16 AM  C:\Users\ehsan\Documents\EOW_Game.rar                                                                                                                 
+ 1.271 .mkv         USER FILE - REVIEW   9/11/2026 11:43:07 AM  C:\Users\ehsan\Downloads\Video\The.Emperors.New.Groove.2000.1080p.Farsi.Dubbed.mkv                                                                    
+ 1.247 .bin         USER FILE - REVIEW   12/8/2017 10:23:54 PM  C:\Users\ehsan\Downloads\Compressed\Hello Neighbor [FitGirl Repack]\fg-01.bin                                                                         
+ 1.242 .rar         USER FILE - REVIEW   8/31/2026 9:21:16 PM   C:\Users\ehsan\Downloads\Compressed\Hello.Neighbor.1.3-ElAmigos-Par30Game.rar                                                                         
+ 1.234 .pak         GAME - REVIEW        8/30/2025 7:44:24 PM   C:\Games\Minecraft Dungeons\Dungeons\Content\Paks\pakchunk4-WindowsNoEditor.pak                                                                       
+  1.11 .pak         GAME - REVIEW        8/30/2025 7:44:15 PM   C:\Games\Minecraft Dungeons\Dungeons\Content\Paks\pakchunk0-WindowsNoEditor.pak                                                                       
+ 1.107 .mkv         USER FILE - REVIEW   9/20/2026 8:48:36 PM   C:\Users\ehsan\Documents\Avengers.Age.of.Ultron.2015.720p.BluRay.Dubbed.Unknown.DonyayeSerial.mkv                                                     
+ 0.953 .vhdx        USER FILE - REVIEW   1/5/2026 12:16:20 AM   C:\Users\ehsan\Downloads\Compressed\WSA_2407.40000.4.0_x64\system.vhdx                                                                                
+  0.92 .zip         USER FILE - REVIEW   6/29/2026 9:58:15 PM   C:\Users\ehsan\Downloads\Compressed\Stronghold_Miniqame_Beta2.zip                                                                                     
+ 0.882 .mp4         USER FILE - REVIEW   10/22/2026 9:51:15 PM  C:\Users\ehsan\Downloads\Saddam-720.mp4                                                                                                               
+ 0.871 .mp4         USER FILE - REVIEW   3/27/2026 8:41:01 PM   C:\Users\ehsan\Downloads\Video\Angry-Bird-2109-720p.mp4                                                                                               
+ 0.857 .dll         DEVELOPMENT - REVIEW 11/30/2025 6:54:34 PM  C:\Users\ehsan\Documents\python\.venv\Lib\site-packages\torch\lib\torch_cuda.dll                                                                      
+ 0.857 .dll         DEVELOPMENT - REVIEW 10/9/2025 1:17:28 PM   C:\Users\ehsan\Documents\python\deepseek\sd.webui\webui\venv\Lib\site-packages\torch\lib\torch_cuda.dll                                               
+ 0.857 .dll         DEVELOPMENT - REVIEW 10/9/2025 10:56:29 AM  C:\Users\ehsan\Documents\python\deepseek\sd.webui\system\python\Lib\site-packages\torch\lib\torch_cuda.dll                                            
+ 0.832 .mp4         USER FILE - REVIEW   10/15/2026 9:31:15 PM  C:\Users\ehsan\Downloads\Video\2619498-0-AbsolutelyTameIsaHorse-720.mp4                                                                               
+  0.82 .pak         GAME - REVIEW        9/7/2026 8:17:18 PM    C:\Games\Hello Neighbor\HelloNeighbor\Mods\AnimatronicMix\Content\Paks\WindowsNoEditor\AnimatronicMix.pak                                             
+ 0.696 .7z          USER FILE - REVIEW   6/1/2026 12:23:31 PM   C:\Users\ehsan\Downloads\Compressed\WSA_2407.40000.4.0_x64_Release-Nightly-GApps-13.0-NoAmazon.7z                                                     
+ 0.668 .mp4         USER FILE - REVIEW   3/3/2026 4:04:20 PM    C:\Users\ehsan\Downloads\shadravan.mp4                                                                                                                
+ 0.641 .7z          USER FILE - REVIEW   4/30/2026 2:37:12 PM   C:\Users\ehsan\Downloads\Compressed\StaxRip-v2.50.8-x64.7z                                                                                            
+ 0.623 .exe         USER FILE - REVIEW   10/6/2026 5:33:57 PM   C:\Users\ehsan\Downloads\Programs\Bionic-1.1.7-7-x64.exe                                                                                              
+ 0.613 .bin         USER FILE - REVIEW   7/12/2011 7:41:56 PM   C:\Users\ehsan\Downloads\Cars.2-BlackBox-Par30Game\Setup-2.bin                                                                                        
+ 0.607 .levelstream GAME - REVIEW        3/30/2010 3:07:58 PM   C:\Games\Blur\levels\usa_sanfran_russianhill\Level.levelstream                                                                                        
+  0.59 .rar         USER FILE - REVIEW   4/9/2026 10:24:47 PM   C:\Users\ehsan\Downloads\Compressed\Old.Market.Simulator.v1.5.6(Gold-Team.Org).rar                                                                    
+ 0.586 .mp4         USER FILE - REVIEW   11/30/2025 8:52:58 AM  C:\Users\ehsan\Downloads\Video\CHRISTMAS GIFT CHAOS - FULL MOVIE _ Platabush Animation.mp4                                                            
+ 0.564 .dll         DEVELOPMENT - REVIEW 10/9/2025 10:56:12 AM  C:\Users\ehsan\Documents\python\deepseek\sd.webui\system\python\Lib\site-packages\torch\lib\cudnn_cnn_infer64_8.dll                                   
+ 0.564 .dll         DEVELOPMENT - REVIEW 10/9/2025 1:17:13 PM   C:\Users\ehsan\Documents\python\deepseek\sd.webui\webui\venv\Lib\site-packages\torch\lib\cudnn_cnn_infer64_8.dll                                      
+ 0.564 .dll         DEVELOPMENT - REVIEW 11/30/2025 6:54:20 PM  C:\Users\ehsan\Documents\python\.venv\Lib\site-packages\torch\lib\cudnn_cnn_infer64_8.dll                                                             
+ 0.554 .mp4         USER FILE - REVIEW   8/13/2025 8:57:08 PM   C:\Users\ehsan\Downloads\Video\TOP 100 Hello Neighbor GLITCHES.mp4                                                                                    
+ 0.546 .pak         GAME - REVIEW        4/30/2010 7:41:24 AM   C:\Games\Blur\cache\root_streaming.pak                                                                                                                
+ 0.539 .exe         USER FILE - REVIEW   6/5/2020 12:51:28 PM   C:\Users\ehsan\Downloads\VMware.Workstation.Pro.15.5.6\VMware-workstation-full-15.5.6-16341506_Soft98.iR.exe                                          
+ 0.527 .levelstream GAME - REVIEW        3/30/2010 4:08:06 PM   C:\Games\Blur\levels\usa_ny_dumbo\Level.levelstream                                                                                                   
+ 0.521 .pak         GAME - REVIEW        4/30/2010 7:39:30 AM   C:\Games\Blur\cache\root.pak                                                                                                                          
+  0.52 .lib         DEVELOPMENT - REVIEW 11/30/2025 6:54:27 PM  C:\Users\ehsan\Documents\python\.venv\Lib\site-packages\torch\lib\dnnl.lib                                                                            
+  0.52 .lib         DEVELOPMENT - REVIEW 10/9/2025 1:17:20 PM   C:\Users\ehsan\Documents\python\deepseek\sd.webui\webui\venv\Lib\site-packages\torch\lib\dnnl.lib                                                     
+  0.52 .lib         DEVELOPMENT - REVIEW 10/9/2025 10:56:20 AM  C:\Users\ehsan\Documents\python\deepseek\sd.webui\system\python\Lib\site-packages\torch\lib\dnnl.lib                                                  
+ 0.511 .exe         USER FILE - REVIEW   10/6/2025 4:13:10 PM   C:\Users\ehsan\Downloads\Programs\video.exe                                                                                                           
+ 0.502 .dll         DEVELOPMENT - REVIEW 11/30/2025 6:54:15 PM  C:\Users\ehsan\Documents\python\.venv\Lib\site-packages\torch\lib\cublasLt64_12.dll                                                                   
+ 0.502 .dll         DEVELOPMENT - REVIEW 10/9/2025 10:56:06 AM  C:\Users\ehsan\Documents\python\deepseek\sd.webui\system\python\Lib\site-packages\torch\lib\cublasLt64_12.dll                                         
+ 0.502 .dll         DEVELOPMENT - REVIEW 10/9/2025 1:17:08 PM   C:\Users\ehsan\Documents\python\deepseek\sd.webui\webui\venv\Lib\site-packages\torch\lib\cublasLt64_12.dll                                            
+ 0.493 .pack        DEVELOPMENT - REVIEW 8/12/2025 12:06:59 PM  C:\Users\ehsan\Documents\MultiTalk-main\triton\.git\objects\pack\pack-2ab8d4fc9a8f3c5096ec0db36ee9b52c27235423.pack                                   
+ 0.489 .mkv         USER FILE - REVIEW   10/29/2026 5:20:17 PM  C:\Users\ehsan\Downloads\Video\The.Punisher.S01E02.720p.Farsi.Dubbed.DonyayeSerial.mkv                                                                
+ 0.478 .rar         USER FILE - REVIEW   5/19/2026 7:00:41 PM   C:\Users\ehsan\Downloads\Compressed\Subnautica.Build.20241558-BAZITORY.part2.rar                                                                      
+ 0.474 .zip         USER FILE - REVIEW   9/16/2026 2:46:28 PM   C:\Users\ehsan\Downloads\Compressed\DLSS.5.Visual.Enhancer.v9.0.zip                                                                                   
+ 0.461 .mkv         USER FILE - REVIEW   10/29/2026 5:14:28 PM  C:\Users\ehsan\Downloads\Video\The.Punisher.S01E01.720p.Farsi.Dubbed.DonyayeSerial.mkv                                                                
+ 0.457 .vmdk        USER FILE - REVIEW   5/30/2025 1:47:21 AM   C:\Users\ehsan\Documents\Kali Linux\kali-linux-2025.2-vmware-amd64-s021.vmdk                                                                          
+ 0.456 .levelstream GAME - REVIEW        3/30/2010 6:51:02 PM   C:\Games\Blur\levels\spa_barcelona_gracia\Level.levelstream                                                                                           
+ 0.441 .exe         TEMP - REVIEW        9/8/2022 6:03:51 PM    C:\Users\ehsan\Documents\local\Temp\TxGameDownload\Component\AOW_Rootfs_100\344abd290c9ba01cda5cd6c495e46630\AOW_Rootfs_100.exe                       
+ 0.441 .exe         TEMP - REVIEW        6/18/2022 7:57:06 PM   C:\Users\ehsan\Documents\local\Temp\TxGameDownload\Component\AOW_Rootfs_100\8c0e9132b39c6cf5490ecc00c6705dc3\AOW_Rootfs_100.exe                       
+ 0.419 .pack        DEVELOPMENT - REVIEW 9/13/2026 2:28:03 PM   C:\Users\ehsan\Documents\QUEM\qemu\.git\objects\pack\pack-8227d3ebe9dc823767825a28963ad69892d3038f.pack                                               
+ 0.401 .rar         USER FILE - REVIEW   5/14/2026 8:01:18 PM   C:\Users\ehsan\Downloads\Compressed\Fender.Studio.Pro.8.0.1.x64.rar                                                                                   
+   0.4 .rar         USER FILE - REVIEW   11/4/2026 12:35:27 PM  C:\Users\ehsan\Downloads\Compressed\Shift.At.Midnight.v1.0.3.0729.2021(Gold-Team.Org).rar                                                             
+ 0.379 .vsix        TEMP - REVIEW        11/10/2026 6:12:26 PM  C:\Users\ehsan\AppData\Local\Temp\u3nncrex\Microsoft.VisualStudio.Web.AzureFunctions.431C4D9423FAFC557562\Microsoft.WebTools.Azure.Functions.Vsix.vsix
+ 0.371 .exe         USER FILE - REVIEW   10/12/2026 11:29:29 AM C:\Users\ehsan\Downloads\Programs\LocalBG_v1.1.8_setup.exe                                                                                            
+ 0.371 .rar         USER FILE - REVIEW   8/29/2026 11:41:50 AM  C:\Users\ehsan\Downloads\Compressed\PlateUp!.Build.09.04.2024.PirateGames.ir.rar                                                                      
+ 0.363 .mp4         USER FILE - REVIEW   11/6/2026 9:52:52 AM   C:\Users\ehsan\Downloads\Video\Sakhteman_Pezeshkan_51_HQ.mp4                                                                                          
+ 0.355 .rar         USER FILE - REVIEW   8/15/2026 11:20:42 PM  C:\Users\ehsan\Documents\EOW_Game\EOW\Assets\Objects\Buildings.rar                                                                                    
+ 0.351 .rar         USER FILE - REVIEW   2/18/2026 10:55:56 PM  C:\Users\ehsan\Downloads\Compressed\Need.for.Speed.The.Run.Limited.Edition-DODI-vgdl.ir.part2.rar                                                     
+ 0.342 .iso         USER FILE - REVIEW   1/18/2017 10:53:56 AM  C:\Users\ehsan\Documents\serious sam.iso                                                                                                              
+ 0.335 .mp4         USER FILE - REVIEW   10/28/2026 8:46:36 PM  C:\Users\ehsan\Downloads\Video\Sakhteman_Pezeshkan_40_HQ.mp4                                                                                          
+ 0.332 .mp4         USER FILE - REVIEW   10/28/2026 8:53:01 PM  C:\Users\ehsan\Downloads\Video\Sakhteman_Pezeshkan_41_HQ.mp4                                                                                          
+ 0.327 .mp4         USER FILE - REVIEW   11/10/2026 5:09:41 PM  C:\Users\ehsan\Downloads\Sakhteman_Pezeshkan_55_HQ.mp4                                                                                                
+ 0.325 .rar         USER FILE - REVIEW   7/25/2026 10:50:22 PM  C:\Users\ehsan\Downloads\Telegram Desktop\New World (2).rar                                                                                           
+  0.32 .zip         USER FILE - REVIEW   9/7/2026 8:17:00 PM    C:\Users\ehsan\Downloads\AnimatronicMix.zip                                                                                                           
+ 0.311 .zip         USER FILE - REVIEW   2/18/2026 9:00:30 PM   C:\Users\ehsan\Downloads\Compressed\Need_for_Speed_Underground_Win_Installed_EN.zip                                                                   
+ 0.309 .levelstream GAME - REVIEW        3/15/2010 3:11:20 PM   C:\Games\Blur\levels\usa_amboy\Level.levelstream                                                                                                      
+ 0.306 .mp4         USER FILE - REVIEW   11/8/2026 5:24:25 PM   C:\Users\ehsan\Downloads\Sakhteman_Pezeshkan_53_HQ.mp4                                                                                                
+ 0.305 .vhdx        USER FILE - REVIEW   1/5/2026 12:15:58 AM   C:\Users\ehsan\Downloads\Compressed\WSA_2407.40000.4.0_x64\product.vhdx                                                                               
+ 0.302 .mp4         USER FILE - REVIEW   11/9/2026 5:16:44 PM   C:\Users\ehsan\Downloads\Sakhteman_Pezeshkan_54_HQ.mp4                                                                                                
+ 0.299 .levelstream GAME - REVIEW        3/30/2010 5:39:56 PM   C:\Games\Blur\levels\usa_sanfran_sausalito\Level.levelstream                                                                                          
+ 0.296 .cab         TEMP - REVIEW        8/15/2025 7:06:09 PM   C:\OneDriveTemp\MSOCache\All Users\{90160000-0051-0000-1000-0000000FF1CE}-C\VisProWW.cab                                                              
+
+
+
+
+===========================================================================
+5. FILE TYPE SUMMARY
+===========================================================================
+
+Extension    Count TotalGB
+---------    ----- -------
+.rar            11    8.87
+.mp4            12    6.36
+.dll             9    5.77
+.pak             5    4.23
+.safetensors     1    3.97
+.mkv             4    3.33
+.exe             6    2.93
+.levelstream     5     2.2
+.zip             4    2.03
+.bin             2    1.86
+.lib             3    1.56
+.7z              2    1.34
+.vhdx            2    1.26
+.pack            2    0.91
+.vmdk            1    0.46
+.vsix            1    0.38
+.iso             1    0.34
+.cab             1     0.3
+
+
+
+
+===========================================================================
+6. IMPORTANT PRESERVED LOCATIONS
+===========================================================================
+C:\Users\ehsan\.lmstudio | 39.944 GB
+C:\Users\ehsan\AppData\Local\Comfy-Desktop | 37.173 GB
+C:\ProgramData\BlueStacks_nxt | 9.796 GB
+C:\Users\ehsan\Documents\python | 20.298 GB
+C:\Users\ehsan\Documents\MultiTalk-main | 0.540 GB
+C:\Users\ehsan\.gradle | 0.920 GB
+C:\Games | 18.911 GB
+
+===========================================================================
+7. INSTALLED APPLICATIONS
+===========================================================================
+
+DisplayName                                                           DisplayVersion     Publisher                        InstallLocation                                                                                               
+-----------                                                           --------------     ---------                        ---------------                                                                                               
+NVM for Windows 1.2.2                                                 1.2.2              Author Software Inc.             C:\Users\ehsan\AppData\Local\nvm\                                                                             
+7-Zip 25.01 (x64)                                                     25.01              Igor Pavlov                      C:\Program Files\7-Zip\                                                                                       
+MyMonero 1.3.3                                                        1.3.3              MyMonero                                                                                                                                       
+DLSS 5 Swapper 2.2.5                                                  2.2.5              Rakan Alkhaldi                                                                                                                                 
+AIMP                                                                  5.30.2563          Artem Izmaylov                                                                                                                                 
+AutoHotkey                                                            2.0.19             AutoHotkey Foundation LLC        C:\Program Files\AutoHotkey                                                                                   
+BlueStacks                                                            5.22.85.1011       now.gg, Inc.                                                                                                                                   
+Cheat Engine 7.5                                                                         Cheat Engine                     C:\Program Files\Cheat Engine 7.5\                                                                            
+CPUID CPU-Z 2.18                                                      2.18               CPUID, Inc.                      C:\Program Files\CPUID\CPU-Z\                                                                                 
+CrystalDiskInfo 9.9.0                                                 9.9.0              Crystal Dew World                C:\Program Files\CrystalDiskInfo\                                                                             
+EasyUEFI                                                              6.0.1              Hasleo Software.                 C:\Program Files\Hasleo\EasyUEFI\                                                                             
+Everything 1.4.1.1028 (x64)                                           1.4.1.1028         voidtools                        C:\Program Files\Everything                                                                                   
+Fender Studio Pro 8                                                   8.0.1.110379       Fender Musical Instruments Corp. C:\Program Files\Fender\Studio Pro 8                                                                          
+Git                                                                   2.55.0.3           The Git Development Community    C:\Program Files\Git\                                                                                         
+KMPlayer 64X (remove only)                                            2026.2.23.17       PandoraTV                        C:\Program Files\KMPlayer 64X                                                                                 
+Mp3tag v3.35.1                                                        3.35.1             Florian Heidenreich              C:\Program Files\Mp3tag                                                                                       
+Notepad++ (64-bit x64)                                                8.9.8.1            Notepad++ Team                                                                                                                                 
+PacketRaft                                                                                                                                                                                                                              
+Phoenix Launcher                                                      1.5.8              Phoenix Client                   "C:\Program Files\Phoenix Launcher"                                                                           
+PotPlayer-64 bit                                                      26.08.19.0         Kakao Corp.                                                                                                                                    
+Microsoft Office Professional Plus 2019 - en-us                       16.0.20527.20150   Microsoft Corporation            C:\Program Files\Microsoft Office                                                                             
+Microsoft Office Professional Plus 2024 - en-us                       16.0.20527.20150   Microsoft Corporation            C:\Program Files\Microsoft Office                                                                             
+shecan-desktop                                                        0.1.5              shecan                                                                                                                                         
+Quake II RTX                                                                             Lightspeed Studios™              C:\Program Files (x86)\Steam\steamapps\common\Quake II RTX                                                    
+We Become What We Behold                                                                 Mismatch Studio                  C:\Program Files (x86)\Steam\steamapps\common\We Become What We Behold                                        
+CarX Street                                                                              CarX Technologies, LLC           C:\Program Files (x86)\Steam\steamapps\common\CarX Street                                                     
+Halo Infinite                                                                            343 Industries                   G:\SteamLibrary\steamapps\common\Halo Infinite                                                                
+Warzone 2100                                                                             Pumpkin Studios                  C:\Program Files (x86)\Steam\steamapps\common\Warzone 2100                                                    
+Muck                                                                                     Dani                             C:\Program Files (x86)\Steam\steamapps\common\Muck                                                            
+Asphalt Legends                                                                          Gameloft                         C:\Program Files (x86)\Steam\steamapps\common\Asphalt 9 Legends                                               
+Banana Shooter                                                                           CodingDaniel                     C:\Program Files (x86)\Steam\steamapps\common\Banana Shooter                                                  
+One-armed cook                                                                           Duhndal                          C:\Program Files (x86)\Steam\steamapps\common\One-armed cook                                                  
+One-armed robber                                                                         Duhndal                          C:\Program Files (x86)\Steam\steamapps\common\One-armed robber                                                
+TOXIKK                                                                                   Reakktor Studios                 C:\Program Files (x86)\Steam\steamapps\common\TOXIKK                                                          
+Carry the Pack Rack Demo                                                                 eys                              C:\Program Files (x86)\Steam\steamapps\common\Carry the Pack Rack Demo                                        
+Warhammer 40,000: Gladius - Relics of War                                                Proxy Studios                    C:\Program Files (x86)\Steam\steamapps\common\Warhammer 40000 Gladius - Relics of War                         
+Aim Clicker                                                                              4Tins Studios                    C:\Program Files (x86)\Steam\steamapps\common\Aim Clicker                                                     
+Just Ignore Them                                                                         Stranga Games                    C:\Program Files (x86)\Steam\steamapps\common\Just Ignore Them                                                
+Counter-Strike 2                                                                         Valve                            C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive                                 
+TEAM R2R PreSonus Sphere Manager                                      2.0.0              TEAM R2R                         C:\Program Files\TEAM R2R\PreSonus Sphere Manager\                                                            
+TEAM R2R Sphere Manager                                               3.0.0              TEAM R2R                         C:\Program Files\TEAM R2R\Sphere Manager\                                                                     
+Unreal Development Kit: 2015-01                                                          Epic Games, Inc.                 C:\Program Files (x86)\Steam\steamapps\common\TOXIKK                                                          
+Unity 6000.4.10f1                                                     6000.4.10f1        Unity Technologies ApS                                                                                                                         
+Unity Hub 3.22.4                                                      3.22.4             Unity Technologies Inc.                                                                                                                        
+WinRAR 7.12 (64-bit)                                                  7.12.0             win.rar GmbH                     C:\Program Files\WinRAR                                                                                       
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664         12.0.40664         Microsoft Corporation                                                                                                                          
+Microsoft Windows Desktop Runtime - 10.0.11 (x64)                     80.44.56884        Microsoft Corporation                                                                                                                          
+IIS Express Application Compatibility Database for x64                                                                                                                                                                                  
+RealVNC Server 7.16.0                                                 7.16.0.14          RealVNC                                                                                                                                        
+Microsoft .NET Runtime - 10.0.11 (x64)                                80.44.56884        Microsoft Corporation                                                                                                                          
+DiagnosticsHub_CollectionService                                      18.5.37003         Microsoft Corporation                                                                                                                          
+Microsoft ODBC Driver 17 for SQL Server                               17.10.6.1          Microsoft Corporation                                                                                                                          
+PCSX2                                                                 2.4.0              PCSX2 Team                       C:\Program Files\PCSX2\                                                                                       
+Microsoft.NET.Sdk.tvOS.Manifest-10.0.100 (x64)                        255.226.10301      Microsoft Corporation                                                                                                                          
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219           10.0.40219         Microsoft Corporation                                                                                                                          
+Python 3.10.0 Add to Path (64-bit)                                    3.10.150.0         Python Software Foundation                                                                                                                     
+Microsoft .NET Host FX Resolver - 10.0.11 (x64)                       80.44.56884        Microsoft Corporation                                                                                                                          
+Microsoft Windows Application Compatibility Fix Database                                                                                                                                                                                
+Python 3.10.0 Documentation (64-bit)                                  3.10.150.0         Python Software Foundation                                                                                                                     
+Application Verifier x64 External Package (OnecoreUAP)                10.1.26100.4188    Microsoft                                                                                                                                      
+Winhance v26.06.12                                                    26.06.12           Marco du Plessis                 C:\Program Files\Winhance\                                                                                    
+Windows Subsystem for Linux                                           2.5.10.0           Microsoft Corporation                                                                                                                          
+Microsoft .NET Host - 8.0.11 (x64)                                    64.44.23191        Microsoft Corporation                                                                                                                          
+UE4 Prerequisites (x64)                                               1.0.11.0           Epic Games, Inc.                                                                                                                               
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61135         11.0.61135         Microsoft Corporation                                                                                                                          
+Microsoft.NET.Workload.Emscripten.net8.Manifest-10.0.100 (x64)        81.188.56884       Microsoft Corporation                                                                                                                          
+Intel(R) Extreme Tuning Utility SDK                                   7.14.2.14          Lenovo                           C:\Program Files\Lenovo\Intel(R) Extreme Tuning Utility\                                                      
+Microsoft Command Line Utilities 15 for SQL Server                    15.0.1300.359      Microsoft Corporation                                                                                                                          
+Xbox Service                                                          4.0.305.0          Microsoft Corporation                                                                                                                          
+vs_minshellx64msi                                                     18.9.11915         Microsoft Corporation                                                                                                                          
+NetMod version 6.3.0                                                  6.3.0              Henry G.                         C:\Program Files\NetMod\                                                                                      
+vs_minshellinteropx64msi                                              18.9.11915         Microsoft Corporation                                                                                                                          
+playit                                                                1.0.10             Developed Methods LLC            C:\Program Files\playit_gg\                                                                                   
+Microsoft.NET.Workload.Mono.Toolchain.net8.Manifest-10.0.100 (x64)    81.188.56884       Microsoft Corporation                                                                                                                          
+Microsoft.NET.Workload.Emscripten.net9.Manifest-10.0.100 (x64)        81.188.56884       Microsoft Corporation                                                                                                                          
+ACC Connector version 0.9.13                                          0.9.13             Ilpo Ruotsalainen                C:\Program Files\ACC Connector\                                                                               
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664            12.0.40664         Microsoft Corporation                                                                                                                          
+Microsoft.NET.Sdk.macOS.Manifest-10.0.100 (x64)                       255.226.10301      Microsoft Corporation                                                                                                                          
+Python 3.10.0 Utility Scripts (64-bit)                                3.10.150.0         Python Software Foundation                                                                                                                     
+Node.js                                                               24.11.1            Node.js Foundation                                                                                                                             
+Microsoft System CLR Types for SQL Server 2019                        15.0.2000.5        Microsoft Corporation                                                                                                                          
+Eclipse Temurin JDK with Hotspot 8u472-b08 (x64)                      8.0.472.8          Eclipse Adoptium                 C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\                                                      
+Microsoft.NET.Workload.Mono.Toolchain.net7.Manifest-10.0.100 (x64)    81.188.56884       Microsoft Corporation                                                                                                                          
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.7523        9.0.30729.7523     Microsoft Corporation                                                                                                                          
+Microsoft Visual Studio 2010 Tools for Office Runtime (x64)           10.0.60922         Microsoft Corporation                                                                                                                          
+Microsoft .NET Targeting Pack - 10.0.11 (x64)                         80.44.56884        Microsoft Corporation                                                                                                                          
+LocalBG version 1.1.8                                                 1.1.8              Urmanda Labs                     C:\Program Files\Urmanda Labs\LocalBG\                                                                        
+Microsoft .NET AppHost Pack - 10.0.11 (x64)                           80.44.56884        Microsoft Corporation                                                                                                                          
+Python 3.10.0 Test Suite (64-bit)                                     3.10.150.0         Python Software Foundation                                                                                                                     
+Microsoft.NET.Workload.Emscripten.Current.Manifest-10.0.100 (x64)     81.188.56884       Microsoft Corporation                                                                                                                          
+VS JIT Debugger                                                       17.0.157.0         Microsoft Corporation                                                                                                                          
+Raspberry Pi Imager                                                   1.9.6              Raspberry Pi Ltd                 C:\Program Files\Raspberry Pi Imager\                                                                         
+NVIDIA Nsight Systems 2026.1.3                                        26.1.3.243         NVIDIA Corporation                                                                                                                             
+Microsoft Visual Studio Installer                                     4.9.50.62957       Microsoft Corporation            "C:\Program Files (x86)\Microsoft Visual Studio\Installer"                                                    
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.51.36247        14.51.36247        Microsoft Corporation                                                                                                                          
+Microsoft .NET Runtime - 9.0.12 (x64)                                 72.48.45417        Microsoft Corporation                                                                                                                          
+Microsoft .NET Toolset 10.0.400 (x64)                                 40.11.17119        Microsoft Corporation                                                                                                                          
+Universal CRT Tools x64                                               10.1.26100.4188    Microsoft Corporation                                                                                                                          
+Tari Universe                                                         1.6.12             Tari Labs, LLC                   C:\Program Files\Tari Universe\                                                                               
+Eclipse Temurin JDK with Hotspot 21.0.7+6 (x64)                       21.0.7.6           Eclipse Adoptium                 C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\                                                       
+Microsoft .NET 10.0 Templates 10.0.400 x64                            40.11.17119        Microsoft Corporation                                                                                                                          
+Microsoft ASP.NET Core Targeting Pack - 10.0.11 (x64)                 80.44.56884        Microsoft Corporation                                                                                                                          
+Windows SDK DirectX x64 Remote                                        10.1.26100.4188    Microsoft Corporation                                                                                                                          
+Microsoft .NET SDK 10.0.400 (x64) from Visual Studio                  40.11.17119        Microsoft Corporation                                                                                                                          
+Paradox Launcher v2                                                   2.4.0              Paradox Interactive                                                                                                                            
+Office 16 Click-to-Run Extensibility Component                        16.0.20527.20112   Microsoft Corporation                                                                                                                          
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.51.36247           14.51.36247        Microsoft Corporation                                                                                                                          
+Bazitory GSE Automation                                               1.0.2              bazitory                         C:\Program Files\Bazitory GSE Automation\                                                                     
+Dokan Library 2.3.0.1000 (x64)                                        2.3.0.1000         Dokany Project                   C:\Program Files\Dokan\Dokan Library-2.3.0\                                                                   
+Microsoft .NET Runtime - 8.0.11 (x64)                                 64.44.23191        Microsoft Corporation                                                                                                                          
+Application Verifier x64 External Package (DesktopEditions)           10.1.26100.4188    Microsoft                                                                                                                                      
+Microsoft .NET Standard Targeting Pack - 2.1.0 (x64)                  24.0.28113         Microsoft Corporation                                                                                                                          
+Microsoft Teams Meeting Add-in for Microsoft Office                   1.25.18202         Microsoft                                                                                                                                      
+Python 3.10.0 Development Libraries (64-bit)                          3.10.150.0         Python Software Foundation                                                                                                                     
+Microsoft.NET.Workload.Emscripten.net6.Manifest-10.0.100 (x64)        81.188.56884       Microsoft Corporation                                                                                                                          
+IIS Express Application Compatibility Database for x86                                                                                                                                                                                  
+Microsoft Visual C++ 2005 Redistributable (x64)                       8.0.61186          Microsoft Corporation                                                                                                                          
+Python 3.10.0 Tcl/Tk Support (64-bit)                                 3.10.150.0         Python Software Foundation                                                                                                                     
+Python 3.10.0 Core Interpreter (64-bit)                               3.10.150.0         Python Software Foundation                                                                                                                     
+CRT Development                                                       13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+ctadvisor                                                             13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUBLAS Runtime                                                        13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUBLAS Development                                                    13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA CUDA Development 13.3                                          13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA CUDA Documentation 13.3                                        13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUDART Runtime                                                        13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA CUDA Runtime 13.3                                              13.3               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\CUDARuntimes_13.3.{48CD8B6F-0578-4022-AF2F-CA8B227ED5D9}       
+NVIDIA CUDA Toolkit 13.3                                              13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUDA Profiler API                                                     13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+${{arpDisplayName}}                                                   13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUFFT Development                                                     13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+cuobjdump                                                             13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUPTI                                                                 13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CURAND Runtime                                                        13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CURAND Development                                                    13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUSOLVER Runtime                                                      13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUSOLVER Development                                                  13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUSPARSE Runtime                                                      13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUSPARSE Development                                                  13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+cuxxfilt                                                              13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA Graphics Driver 616.92                                         616.92             NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\Display.Driver.{432026B5-48F2-470D-942C-F8C492584BE0}          
+NVIDIA App 11.0.9.251                                                 11.0.9.251         NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\Display.NvApp.{DE77F24F-4E6D-418D-BCD2-E2AD505214E9}           
+NVIDIA MessageBus 3 for NvApp                                         3.21               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\Display.NvApp.MessageBus.{F90799AF-037F-49B4-858D-DD75FEB3E48C}
+NVIDIA Backend                                                        11.0.9.251         NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\Display.NvApp.NvBackend.{B643C1EF-601C-4BFD-8C9A-E0D3B5256304} 
+NVIDIA App driver settings                                            1.0                NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\Display.NvApp.NvCPL.{3834BE0F-D167-4B60-813F-BFC089BC0B84}     
+NVIDIA PhysX System Software 9.26.0703                                9.26.0703          NVIDIA Corporation               C:\Program Files (x86)\NVIDIA Corporation\PhysX                                                               
+CUDA Documentation                                                    13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA FrameView 1.9.0                                                1.9.0              NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\FrameView                                                                 
+NVIDIA FrameView SDK 1.9.12728.38614306                               1.9.12728.38614306 NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\FrameViewSDK                                                              
+NVIDIA HD Audio Driver 1.4.6.3                                        1.4.6.3            NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\HDAudio.Driver.{EACDCCDB-44B2-453F-A2A5-52EBD2E4F799}          
+NVIDIA Install Application                                            2.1002.464.0       NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\InstallerCore                                                  
+NPP Runtime                                                           13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NPP Development                                                       13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+nvcc                                                                  13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA Container                                                      1.51               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\NvContainer                                                               
+NVIDIA AIUser Container                                               1.51               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\NvContainer.AIUser.{CB22CC3B-B741-42CE-865C-1AC5C77351E5}      
+NVIDIA LocalSystem Container                                          1.51               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\NvContainer.LocalSystem.{FCBFB2FC-0638-47A9-86A4-57D0CEA5B816} 
+NVIDIA Session Container                                              1.51               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\NvContainer.Session.{9042697B-91F1-44E1-AE52-052357016334}     
+NVIDIA User Container                                                 1.51               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\NvContainer.User.{633258D5-606E-4A8C-B054-77DB120E895F}        
+Disassembler                                                          13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA NvDLISR                                                        1.0                NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\NvDLISR.{61BABD4F-0C5E-41E6-8D73-EEBA80ED92A5}                 
+NVFATBIN Runtime                                                      13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVJITLINK Runtime                                                     13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVJPEG Runtime                                                        13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVJPEG Development                                                    13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVML Development                                                      13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA Platform Controllers and Framework                             615.34             NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\NVPCF.{7FF72AC5-9469-4EC1-B1D8-DF314E6F230E}                   
+NVIDIA Watchdog Plugin for NvContainer                                1.51               NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\NvPlugin.Watchdog.{BFC6B8AA-BE77-4DCA-9E26-75FA4C4E77A6}       
+nvprune                                                               13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+libnvptxcompiler Development                                          13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVRTC Runtime                                                         13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVRTC Development                                                     13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA Telemetry Client                                               19.8.1.0           NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\NvTelemetry                                                               
+NVTX Development                                                      13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVVM Development                                                      13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+Occupancy Calculator                                                  13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+OPENCL Runtime                                                        13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+Compute Sanitizer                                                     13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA ShadowPlay 11.0.9.500                                          11.0.9.500         NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\NVIDIA App\ShadowPlay                                                     
+CUDA CCCL                                                             13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+CUDART TileIR                                                         13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+NVIDIA USBC Driver 1.52.831.832                                       1.52.831.832       NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\USBC.{4C3935E9-D991-4934-A5FE-BEDF74A627BB}                    
+NVIDIA Virtual Audio 4.92.0.0                                         4.92.0.0           NVIDIA Corporation               C:\Program Files\NVIDIA Corporation\Installer2\VirtualAudio.Driver.{E5CD1BAE-9027-4E2E-99CF-370DE4587048}     
+NVIDIA CUDA Visual Studio Integration 13.3                            13.3               NVIDIA Corporation               C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3                                                      
+Microsoft .NET AppHost Pack - 10.0.11 (x64_arm64)                     80.44.56884        Microsoft Corporation                                                                                                                          
+RealVNC Viewer 7.13.1                                                 7.13.1.57          RealVNC                                                                                                                                        
+Microsoft .NET AppHost Pack - 10.0.11 (x64_x86)                       80.44.56884        Microsoft Corporation                                                                                                                          
+Windows App Certification Kit Native Components                       10.1.26100.4188    Microsoft Corporation                                                                                                                          
+Microsoft.NET.Workload.Mono.Toolchain.net9.Manifest-10.0.100 (x64)    81.188.56884       Microsoft Corporation                                                                                                                          
+Python 3.10.0 Standard Library (64-bit)                               3.10.150.0         Python Software Foundation                                                                                                                     
+ENE_QSI_Loki_HAL                                                      1.0.3.0            ENE TECHNOLOGY INC.                                                                                                                            
+NVIDIA Nsight Visual Studio Edition 2026.2.0.26084                    26.2.0.26084       NVIDIA Corporation                                                                                                                             
+vs_devenx64vmsi                                                       18.9.11915         Microsoft Corporation                                                                                                                          
+Microsoft Windows Desktop Runtime - 8.0.11 (x64)                      64.44.23253        Microsoft Corporation                                                                                                                          
+IIS 10.0 Express                                                      10.0.11304         Microsoft Corporation                                                                                                                          
+Microsoft.NET.Sdk.Maui.Manifest-10.0.100 (x64)                        10.0.20            Microsoft Corporation                                                                                                                          
+Microsoft.NET.Workload.Mono.Toolchain.Current.Manifest-10.0.100 (x64) 81.188.56884       Microsoft Corporation                                                                                                                          
+Microsoft Update Health Tools                                         5.72.0.0           Microsoft Corporation                                                                                                                          
+Microsoft .NET Host FX Resolver - 9.0.12 (x64)                        72.48.45417        Microsoft Corporation                                                                                                                          
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61135            11.0.61135         Microsoft Corporation                                                                                                                          
+vs_communityx64msi                                                    18.9.11921         Microsoft Corporation                                                                                                                          
+Samsung USB Driver for Mobile Phones                                  1.9.0.0            Samsung Electronics Co., Ltd.                                                                                                                  
+Microsoft ASP.NET Core Runtime - 10.0.11 (x64)                        80.44.56884        Microsoft Corporation                                                                                                                          
+Python 3.10.0 pip Bootstrap (64-bit)                                  3.10.150.0         Python Software Foundation                                                                                                                     
+Python 3.10.0 Executables (64-bit)                                    3.10.150.0         Python Software Foundation                                                                                                                     
+Disk Drill 6.3.1398.0                                                 6.3.1398.0         CleverFiles                                                                                                                                    
+Microsoft Web Deploy 4.0                                              10.0.9419          Microsoft Corporation                                                                                                                          
+Microsoft GameInput                                                   4.0.306.0          Microsoft Corporation                                                                                                                          
+Microsoft .NET Host - 9.0.12 (x64)                                    72.48.45417        Microsoft Corporation                                                                                                                          
+Microsoft .NET Host - 10.0.11 (x64)                                   80.44.56884        Microsoft Corporation                                                                                                                          
+Microsoft Windows Desktop Targeting Pack - 10.0.11 (x64)              80.44.56884        Microsoft Corporation                                                                                                                          
+NVIDIA Nsight Compute 2026.2.0                                        26.2.0.0           NVIDIA Corporation                                                                                                                             
+OpenRGB                                                               0.9.1244           OpenRGB                                                                                                                                        
+Microsoft SQL Server 2025 LocalDB                                     17.0.4025.3        Microsoft Corporation                                                                                                                          
+Microsoft.NET.Workload.Mono.Toolchain.net6.Manifest-10.0.100 (x64)    81.188.56884       Microsoft Corporation                                                                                                                          
+VMware Workstation                                                    15.5.6             VMware, Inc.                                                                                                                                   
+Microsoft.NET.Sdk.Android.Manifest-10.0.100 (x64)                     36.1.69            Microsoft Corporation                                                                                                                          
+PuTTY release 0.83 (64-bit)                                           0.83.0.0           Simon Tatham                                                                                                                                   
+Microsoft.NET.Sdk.iOS.Manifest-10.0.100 (x64)                         255.226.10301      Microsoft Corporation                                                                                                                          
+Microsoft.NET.Sdk.MacCatalyst.Manifest-10.0.100 (x64)                 255.226.10301      Microsoft Corporation                                                                                                                          
+Microsoft ASP.NET Core Module V2 for IIS Express                      17.0.22116.0       Microsoft Corporation                                                                                                                          
+Disk Drill 6.3.1398.0 (x64)                                           6.3.1398.0         CleverFiles                                                                                                                                    
+Microsoft.NET.Workload.Emscripten.net7.Manifest-10.0.100 (x64)        81.188.56884       Microsoft Corporation                                                                                                                          
+VS Script Debugging Common                                            17.0.157.0         Microsoft Corporation                                                                                                                          
+Microsoft .NET Host FX Resolver - 8.0.11 (x64)                        64.44.23191        Microsoft Corporation                                                                                                                          
+IntelliTraceProfilerProxy                                             15.0.21225.01      Microsoft Corporation                                                                                                                          
+Eclipse Temurin JDK with Hotspot 25.0.4+7 (x64)                       25.0.4.7           Eclipse Adoptium                 C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot\                                                       
+Microsoft ASP.NET Core Module for IIS Express                         12.2.18292.0       Microsoft Corporation                                                                                                                          
+Microsoft Windows Desktop Runtime - 9.0.12 (x64)                      72.48.45460        Microsoft Corporation                                                                                                                          
+Microsoft Visual C++ 2022 X64 Debug Runtime - 14.44.35211             14.44.35211        Microsoft Corporation                                                                                                                          
+
+
+
+
+DisplayName                                                                   DisplayVersion    Publisher                               InstallLocation                                                      
+-----------                                                                   --------------    ---------                               ---------------                                                      
+Hello Neighbor 2: Late Fees DLC                                               4.27.2.0 GOG_link GOG.com                                 D:\Hello Neighbor 2\                                                 
+Brothers - A Tale of Two Sons                                                 2.0.0.2           GOG.com                                 C:\GOG Games\Brothers - A Tale of Two Sons\                          
+Hello Neighbor 2                                                              4.27.2.0 GOG_link GOG.com                                 D:\Hello Neighbor 2\                                                 
+Hello Neighbor 2: Hello-copter DLC                                            4.27.2.0 GOG_link GOG.com                                 D:\Hello Neighbor 2\                                                 
+Hello Neighbor 2: Back to School DLC                                          4.27.2.0 GOG_link GOG.com                                 D:\Hello Neighbor 2\                                                 
+Visual Studio Build Tools 2022                                                17.14.11          Microsoft Corporation                   C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools       
+MSI Afterburner 4.6.6                                                         4.6.6             MSI Co., LTD                                                                                                 
+AnyDesk                                                                       ad 9.0.14         AnyDesk Software GmbH                   "C:\Program Files (x86)\AnyDesk"                                     
+Army Men RTS                                                                  1.1               [PoW]Dread+MarKana                      C:\Program Files (x86)\3DO\Army Men RTS                              
+Visual Studio Community 2026                                                  18.9.1            Microsoft Corporation                   C:\Program Files\Microsoft Visual Studio\18\Community                
+Brave                                                                         157.1.99.55       Brave Software Inc                      C:\Program Files\BraveSoftware\Brave-Browser\Application             
+CryptoTab Browser                                                             131.0.6778.109    The CryptoTab Browser Authors           C:\Program Files\CryptoTab Browser\Application                       
+DiskInternals Linux Reader                                                    4.26              DiskInternals                                                                                                
+EasyBCD 2.4                                                                   2.4               NeoSmart Technologies                   C:\Program Files (x86)\NeoSmart Technologies\EasyBCD                 
+Stronghold Crusader Extreme HD                                                2.0.0.6           GOG.com                                 C:\GOG Games\Stronghold Crusader Extreme HD\                         
+Hearts of Iron IV                                                                                                                       D:\Games\Hearts of Iron IV\                                          
+Hello Neighbor                                                                                                                          G:\Hello Neighbor\                                                   
+Smart Switch                                                                  4.3.24094.1       Samsung Electronics Co., Ltd.           C:\Program Files (x86)\Samsung\Smart Switch PC\                      
+Internet Download Manager                                                     6.43.10           Tonec Inc.                                                                                                   
+Lust Theory: Season 1                                                                                                                   G:\Lust Theory - Season 1\                                           
+MEmu                                                                          9.3.2.0           Microvirt Software Technology Co., Ltd. D:\Microvirt                                                         
+Copilot                                                                       157.0.4341.46     Microsoft Corporation                   C:\Program Files (x86)\Microsoft\Copilot\Application                 
+Microsoft Edge                                                                157.0.4341.46     Microsoft Corporation                   C:\Program Files (x86)\Microsoft\Edge\Application                    
+Microsoft Edge WebView2 Runtime                                               157.0.4341.46     Microsoft Corporation                   C:\Program Files (x86)\Microsoft\EdgeWebView\Application             
+Minecraft Dungeons                                                                                                                      C:\Games\Minecraft Dungeons\                                         
+Need for Speed Most Wanted (black edition)                                    1.3               Electronic Arts                         G:\NFS Most Wanted                                                   
+Need for Speed The Run                                                        0.0.0             DODI-Repacks                            G:\Need for Speed™ The Run\                                          
+Need for Speed: Payback                                                                                                                 C:\Games\Need for Speed - Payback\                                   
+Nmap 7.98                                                                     7.98              Nmap Project                            C:\Program Files (x86)\Nmap                                          
+Npcap                                                                         1.83              Nmap Project                            C:\Program Files\Npcap                                               
+OBS Studio                                                                    32.1.2            OBS Project                                                                                                  
+OpenAL                                                                                                                                                                                                       
+ParkControl                                                                   5.5.4.4           Bitsum                                  C:\Program Files\ParkControl                                         
+Adobe Photoshop 2025                                                          26.10.0.7         Adobe Inc.                              C:\Program Files\Adobe\Adobe Photoshop 2025                          
+PowerISO                                                                      5.6               Power Software Ltd                      C:\Program Files (x86)\PowerISO                                      
+Process Lasso                                                                 18.2.0.50         Bitsum                                  C:\Program Files\Process Lasso                                       
+R-Studio Technician 9.5                                                       9.5.191580        R-Tools Technology Inc.                                                                                      
+Raft                                                                          U7                                                        C:\Program Files (x86)\Raft\                                         
+RivaTuner Statistics Server 7.3.7                                             7.3.7             Unwinder                                                                                                     
+Rust 2592 (3.07.2025/19089949)                                                3.07.2025.2592                                            C:\Games\Rust\                                                       
+Dashboard                                                                     5.2.2.3           SanDisk Corporation                                                                                          
+Serious Sam 1  Farsi Edition                                                                                                                                                                                 
+SEXNATURAL: MILFs Must...                                                                                                               C:\Games\game\                                                       
+Steam                                                                         2.10.91.91        Valve Corporation                                                                                            
+Super Castle Attack                                                                                                                                                                                          
+The Forest                                                                    1.0               Endnigï»¿ht Gaï»¿mes Ltï»¿dï»¿          G:\The Forest Offline\                                               
+TLauncher                                                                     2.9334            TLauncher Inc.                          C:\Users\ehsan\AppData\Roaming\.minecraft                            
+Tomb Raider GOTY Edition                                                      0.0.0             DODI-Repacks                            G:\Tomb Raider GOTY Edition\                                         
+Uplay                                                                         3.0               Ubisoft                                 C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\                
+UXP WebView Support                                                           1.3.0             Adobe Inc.                              C:\Program Files\Common Files\Adobe\Microsoft\EdgeWebView            
+Lenovo Vantage Service                                                        5.1.2609.9        Lenovo Group Ltd.                       C:\Program Files (x86)\Lenovo\VantageService\\5.1.2609.9             
+Warcraft III_Reign Of Chaos&Frozen Throne                                                       AsreBazi, Inc.                          C:\Program Files (x86)\ABM\Warcraft III_Reign Of Chaos&Frozen Throne\
+Wise Force Deleter                                                            1.5.7             Lespeed Technology Co., Ltd.            C:\Program Files (x86)\Wise\Wise Force Deleter\                      
+X-Mouse Button Control 2.20.5                                                 2.20.5            Highresolution Enterprises                                                                                   
+ZeroTier One                                                                  1.16.1            ZeroTier, Inc.                          C:\Program Files (x86)\ZeroTier\One\                                 
+Windows SDK for Windows Store Apps Libs                                       10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft .NET Runtime - 10.0.11 (x86)                                        80.44.56884       Microsoft Corporation                                                                                        
+Windows SDK Facade Windows WinMD Versioned                                    10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows App Certification Kit SupportedApiList x86                            10.1.26100.4188   Microsoft Corporation                                                                                        
+Universal CRT Redistributable                                                 10.0.26624        Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501                  12.0.30501.0      Microsoft Corporation                                                                                        
+vs_tipsmsi                                                                    18.9.11915        Microsoft Corporation                                                                                        
+Windows SDK for Windows Store Apps Headers OnecoreUap                         10.1.26100.4188   Microsoft Corporation                                                                                        
+UE4 Prerequisites (x64)                                                       1.0.14.0          Epic Games, Inc.                                                                                             
+Microsoft Visual C++ v14 Redistributable (x64) - 14.51.36247                  14.51.36247.0     Microsoft Corporation                                                                                        
+vs_clickoncebootstrappermsires                                                18.9.11915        Microsoft Corporation                                                                                        
+Microsoft .NET Framework 4.7.2 Targeting Pack                                 4.7.03062         Microsoft Corporation                                                                                        
+vs_CoreEditorFonts                                                            17.7.40001        Microsoft Corporation                                                                                        
+Microsoft .NET Framework Cumulative Intellisense Pack for Visual Studio (ENU) 4.8.09037         Microsoft Corporation                                                                                        
+Radmin Server 3.5.2                                                           3.52.1.0000       Famatech                                C:\WINDOWS\SysWOW64\rserver30\                                       
+WinRT Intellisense PPI - Other Languages                                      10.1.26100.4188   Microsoft Corporation                                                                                        
+ENE_QSI_Loki_HAL                                                              1.0.3.0           ENE TECHNOLOGY INC.                                                                                          
+WinRT Intellisense Desktop - en-us                                            10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK Desktop Libs arm64                                                10.1.26100.4188   Microsoft Corporation                                                                                        
+WinAppDeploy                                                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+APK Editor Studio                                                             1.7.2             Alexander Gorishnyak                                                                                         
+Dokan Library 2.3.0.1000 Bundle                                               2.3.0.1000        Dokany Project                                                                                               
+Windows Mobile Extension SDK                                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+vs_SQLClickOnceBootstrappermsi                                                18.9.11915        Microsoft Corporation                                                                                        
+UE4 Prerequisites (x64)                                                       1.0.13.0          Epic Games, Inc.                                                                                             
+vs_FileTracker_Singleton                                                      18.9.11915        Microsoft Corporation                                                                                        
+Microsoft XNA Framework Redistributable 4.0                                   4.0.20823.0       Microsoft Corporation                                                                                        
+vs_minshellsharedmsi                                                          18.9.11921        Microsoft Corporation                                                                                        
+icecap_collection_neutral                                                     18.9.11915        Microsoft Corporation                                                                                        
+vs_minshellinteropsharedmsi                                                   18.9.11915        Microsoft Corporation                                                                                        
+Windows SDK ARM64 Desktop Tools                                               10.1.26100.4188   Microsoft Corporation                                                                                        
+Kits Configuration Installer                                                  10.1.26100.4188   Microsoft                                                                                                    
+Microsoft .NET Host - 10.0.11 (x86)                                           80.44.56884       Microsoft Corporation                                                                                        
+Windows SDK for Windows Store Apps Tools                                      10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft ASP.NET Core Targeting Pack - 10.0.11 (x86)                         80.44.56884       Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030                  11.0.61030.0      Microsoft Corporation                                                                                        
+Windows SDK for Windows Store Managed Apps Libs                               10.1.26100.4188   Microsoft Corporation                                                                                        
+vs_codecoveragemsi                                                            18.9.11915        Microsoft Corporation                                                                                        
+icecap_collection_x64                                                         18.9.11915        Microsoft Corporation                                                                                        
+SDK ARM64 Additions                                                           10.1.26100.4188   Microsoft Corporation                                                                                        
+vs_minshellmsires                                                             18.9.11915        Microsoft Corporation                                                                                        
+Windows SDK for Windows Store Apps                                            10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows IoT Extension SDK                                                     10.1.26100.4188   Microsoft Corporation                                                                                        
+Universal General MIDI DLS Extension SDK                                      10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft Games for Windows - LIVE Redistributable                            3.5.95.0          Microsoft Corporation                                                                                        
+Windows Mobile Extension SDK Contracts                                        10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK Desktop Libs x64                                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+Python Launcher                                                               3.10.7581.0       Python Software Foundation                                                                                   
+Windows SDK Desktop Tools x86                                                 10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows Desktop Extension SDK Contracts                                       10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK OnecoreUap Headers x86                                            10.1.26100.4188   Microsoft Corporation                                                                                        
+FoxClient version 1.21                                                        1.21              Zipp                                                                                                         
+WinRT Intellisense Mobile - en-us                                             10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.51.36247                   14.51.36247       Microsoft Corporation                                                                                        
+vs_clickoncebootstrappermsi                                                   18.9.11915        Microsoft Corporation                                                                                        
+Cars 2 The Video Game version 1.0                                             1.0               Disney Interactive Studios              C:\MyProg\                                                           
+Microsoft Visual Studio Setup Configuration                                   4.8.41.48107      Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2022 X86 Additional Runtime - 14.51.36247                14.51.36247       Microsoft Corporation                                                                                        
+Windows Desktop Extension SDK                                                 10.1.26100.4188   Microsoft Corporation                                                                                        
+Universal CRT Redistributable                                                 10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK AddOn                                                             10.1.0.0          Microsoft Corporation                                                                                        
+Microsoft Windows Desktop Targeting Pack - 10.0.11 (x86)                      80.44.56884       Microsoft Corporation                                                                                        
+Lenovo Now                                                                    4.8.0.54          Lenovo                                  C:\Program Files (x86)\Lenovo\LenovoNow\                             
+Windows SDK Modern Versioned Developer Tools                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK Redistributables                                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+WinRT Intellisense PPI - en-us                                                10.1.26100.4188   Microsoft Corporation                                                                                        
+WinRT Intellisense Desktop - Other Languages                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows IoT Extension SDK Contracts                                           10.1.26100.4188   Microsoft Corporation                                                                                        
+Stronghold Legends                                                            1.00.0000         Firefly Studios                         C:\Program Files (x86)\Firefly Studios\Stronghold Legends            
+Microsoft Games for Windows Marketplace                                       3.5.67.0          Microsoft Corporation                                                                                        
+MSI Development Tools                                                         10.1.26100.4188   Microsoft Corporation                                                                                        
+vs_githubprotocolhandlermsi                                                   18.9.11915        Microsoft Corporation                                                                                        
+Universal CRT Tools x86                                                       10.1.26100.4188   Microsoft Corporation                                                                                        
+vs_minshellmsi                                                                17.14.36301       Microsoft Corporation                                                                                        
+WinRT Intellisense IoT - Other Languages                                      10.1.26100.4188   Microsoft Corporation                                                                                        
+Universal CRT Extension SDK                                                   10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2005 Redistributable                                     8.0.61187         Microsoft Corporation                                                                                        
+Microsoft ASP.NET Core Runtime - 10.0.11 (x86)                                80.44.56884       Microsoft Corporation                                                                                        
+Smart Switch                                                                  4.3.24094.1       Samsung Electronics Co., Ltd.           C:\Program Files (x86)\Samsung\Smart Switch PC\                      
+Microsoft Visual Studio Setup WMI Provider                                    4.8.41.48107      Microsoft Corporation                                                                                        
+Windows SDK EULA                                                              10.1.26100.4188   Microsoft Corporations                                                                                       
+Resource Hacker version 5.2.8                                                 5.2.8             Angus Johnson                           C:\Program Files (x86)\Resource Hacker\                              
+Windows SDK Desktop Tools x64                                                 10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft TestPlatform SDK Local Feed                                         17.10.0.9037153   Microsoft                                                                                                    
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664                    12.0.40664        Microsoft Corporation                                                                                        
+WinRT Intellisense UAP - Other Languages                                      10.1.26100.4188   Microsoft Corporation                                                                                        
+ZeroTier One                                                                  1.16.1            ZeroTier, Inc.                          C:\Program Files (x86)\ZeroTier\One\                                 
+WinRT Intellisense IoT - en-us                                                10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK for Windows Store Apps Headers                                    10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK DirectX x86 Remote                                                10.1.26100.4188   Microsoft Corporation                                                                                        
+Command & Conquer(tm) Generals&ZH                                             1.00.0000         TBN&M                                   D:\Command & Conquer(tm) Generals&ZH                                 
+Microsoft Windows Desktop Runtime - 9.0.12 (x64)                              9.0.12.35609      Microsoft Corporation                                                                                        
+Windows SDK Desktop Headers x64                                               10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK Signing Tools                                                     10.1.26100.4188   Microsoft Corporation                                                                                        
+HDD Regenerator                                                               20.24.0000        Abstradrome                             C:\Program Files (x86)\HDD Regenerator\                              
+TechPowerUp GPU-Z                                                             2.70.0            TechPowerUp                             C:\Program Files (x86)\GPU-Z\                                        
+Stronghold Crusader HD                                                        1.40.100          Firefly Studios                         C:\GOG Games\Stronghold.Crusader.Extreme.HD.Farsi_ParsiGamer.ir      
+Entity Framework 6.5.0 Tools  for Visual Studio 2022                          6.5.0.0           Microsoft Corporation                                                                                        
+Remote Utilities - Viewer                                                     7.7.3.0           Remote Utilities Pte. Ltd.              C:\Program Files (x86)\Remote Utilities - Viewer\                    
+Windows SDK Desktop Tools arm64                                               10.1.26100.4188   Microsoft Corporation                                                                                        
+WinRT Intellisense UAP - en-us                                                10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft .NET Framework 4.8 SDK                                              4.8.03928         Microsoft Corporation                                                                                        
+Windows SDK Desktop Headers x86                                               10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows App Certification Kit x64 (OnecoreUAP)                                10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows Team Extension SDK                                                    10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17                  9.0.30729         Microsoft Corporation                                                                                        
+Microsoft Visual C++ v14 Redistributable (x86) - 14.51.36247                  14.51.36247.0     Microsoft Corporation                                                                                        
+Microsoft Windows Desktop Runtime - 10.0.11 (x86)                             80.44.56884       Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.7523                9.0.30729.7523    Microsoft Corporation                                                                                        
+Radmin Viewer 3.5.2                                                           3.52.1.0000       Famatech                                C:\Program Files (x86)\Radmin Viewer 3\                              
+Windows Software Development Kit - Windows 10.0.26100.4188                    10.1.26100.4188   Microsoft Corporation                                                                                        
+vs_communitysharedmsi                                                         18.9.11921        Microsoft Corporation                                                                                        
+vs_minshellinteropmsi                                                         17.14.36015       Microsoft Corporation                                                                                        
+Microsoft .NET Framework 4.8 Targeting Pack (ENU)                             4.8.03761         Microsoft Corporation                                                                                        
+Windows App Certification Kit x64                                             10.1.26100.4188   Microsoft Corporation                                                                                        
+Honeygain                                                                     1.6.0.0           Honeygain UAB                           C:\Program Files (x86)\Honeygain\                                    
+vs_communitymsires                                                            18.9.11915        Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61135                 11.0.61135        Microsoft Corporation                                                                                        
+Microsoft .NET Framework 4.7.2 Targeting Pack (ENU)                           4.7.03062         Microsoft Corporation                                                                                        
+vs_BlendMsi                                                                   18.9.11915        Microsoft Corporation                                                                                        
+Microsoft .NET Framework 4.8 Targeting Pack                                   4.8.03761         Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2022 X86 Debug Runtime - 14.44.35211                     14.44.35211       Microsoft Corporation                                                                                        
+Microsoft Windows Desktop Runtime - 8.0.11 (x64)                              8.0.11.34221      Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61135                    11.0.61135        Microsoft Corporation                                                                                        
+ClickOnce Bootstrapper Package for Microsoft .NET Framework                   4.8.09256         Microsoft Corporation                                                                                        
+VS Immersive Activate Helper                                                  17.0.157.0        Microsoft Corporation                                                                                        
+SDK ARM64 Redistributables                                                    10.1.26100.4188   Microsoft Corporation                                                                                        
+Universal CRT Headers Libraries and Sources                                   10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft Visual Basic/C++ Runtime (x86)                                      1.1.0             Microsoft Corporation                                                                                        
+Microsoft ASP.NET Diagnostic Pack for Visual Studio                           18.9.34.65316     Microsoft Corporation                                                                                        
+Microsoft .NET Targeting Pack - 10.0.11 (x86)                                 80.44.56884       Microsoft Corporation                                                                                        
+vcpp_crt.redist.clickonce                                                     14.44.35211       Microsoft Corporation                                                                                        
+vs_clickoncesigntoolmsi                                                       18.9.11915        Microsoft Corporation                                                                                        
+Advanced IP Scanner 2.5.1                                                     2.5.4594.1        Famatech                                C:\Program Files (x86)\Advanced IP Scanner\                          
+IntelliTraceProfilerProxy                                                     15.0.21225.01     Microsoft Corporation                                                                                        
+Custom Cursor 1.0.25                                                          1.0.25            Blife Team                              C:\Users\ehsan\AppData\Local\Blife\CustomCursor\                     
+Windows SDK OnecoreUap Headers arm64                                          10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK Desktop Headers arm64                                             10.1.26100.4188   Microsoft Corporation                                                                                        
+Far Cry Primal Apex Edition MULTi19 - ElAmigos version 1.3.3                  1.3.3             Ubisoft                                 G:\Far Cry Primal\                                                   
+Windows Team Extension SDK Contracts                                          10.1.26100.4188   Microsoft Corporation                                                                                        
+Generals                                                                      1.00.0000         PardisGame                              D:\Command and Conquer Generals Zero Hour\                           
+vs_filehandler_x86                                                            18.9.11921        Microsoft Corporation                                                                                        
+Windows SDK                                                                   10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664                 12.0.40664        Microsoft Corporation                                                                                        
+Hello Neighbor MULTi23 - ElAmigos version 1.3                                 1.3               tinyBuild                               G:\Hello Neighbor\                                                   
+Windows SDK OnecoreUap Headers x64                                            10.1.26100.4188   Microsoft Corporation                                                                                        
+Need for Speed Heat MULTi13 - ElAmigos version 1.0.60.7040                    1.0.60.7040       EA Games                                G:\Need for Speed™ Heat\                                             
+Dorsan DNS LIVE v50120                                                        50120                                                     C:\dorsan best dns\                                                  
+Windows SDK for Windows Store Apps DirectX x86 Remote                         10.1.26100.4188   Microsoft Corporation                                                                                        
+Tari Universe                                                                 1.5.12            Tari Labs, LLC                                                                                               
+Total Video Audio Converter v4.1.2 build 1649                                                   Hoo Technologies                        C:\Program Files (x86)\Total Video Audio Converter 4\                
+vs_devenvsharedmsi                                                            18.9.11915        Microsoft Corporation                                                                                        
+Windows SDK for Windows Store Apps Metadata                                   10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK Desktop Libs x86                                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219                   10.0.40219        Microsoft Corporation                                                                                        
+Microsoft .NET Host FX Resolver - 10.0.11 (x86)                               80.44.56884       Microsoft Corporation                                                                                        
+vs_vswebprotocolselectormsi                                                   18.9.11915        Microsoft Corporation                                                                                        
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501                  12.0.30501.0      Microsoft Corporation                                                                                        
+Windows SDK Modern Non-Versioned Developer Tools                              10.1.26100.4188   Microsoft Corporation                                                                                        
+Windows SDK for Windows Store Apps Contracts                                  10.1.26100.4188   Microsoft Corporation                                                                                        
+vcpp_crt.redist.clickonce                                                     14.51.36247       Microsoft Corporation                                                                                        
+vs_filehandler_amd64                                                          18.9.11921        Microsoft Corporation                                                                                        
+Cars 2                                                                        1.00.0000         Disney Interactive Studios              C:\MyProg\                                                           
+
+
+
+
+DisplayName                         DisplayVersion Publisher                       InstallLocation                                                                                         
+-----------                         -------------- ---------                       ---------------                                                                                         
+ZelCore 8.18.1                      8.18.1         InFlux Technologies Limited                                                                                                             
+OpenFront.io                        1.0            BraveSoftware\Brave-Browser                                                                                                             
+Bionic 1.1.7+7                      1.1.7+7        LM Studio                                                                                                                               
+Babylon.js Sandbox                  1.0            BraveSoftware\Brave-Browser                                                                                                             
+Brave                               157.1.99.57    Brave Software Inc              C:\Users\ehsan\AppData\Local\BraveSoftware\Brave-Browser\Application                                    
+LM Studio 0.4.26+4                  0.4.26+4       LM Studio                                                                                                                               
+CurseForge 1.310.1-35445            1.310.1-35445  Overwolf                                                                                                                                
+CapCut                              8.8.0.3774     Bytedance Pte. Ltd.                                                                                                                     
+Discord                             1.0.9256       Discord Inc.                    C:\Users\ehsan\AppData\Local\Discord                                                                    
+DriverHub                           2.1.5.0        ROSTPAY LTD.                    C:\Users\ehsan\AppData\Local\Programs\DriverHub                                                         
+Comfy Desktop 1.1.9                 1.1.9          Comfy Org                                                                                                                               
+FastCopy                            5.11.3         H.Shirouzu & FastCopy Lab, LLC.                                                                                                         
+GameRanger                                         GameRanger Technologies         C:\Users\ehsan\AppData\Roaming\GameRanger\GameRanger                                                    
+OP Auto Clicker                     V4.0           OP Auto Clicker                 C:\Users\ehsan\AppData\Roaming\OP Auto Clicker\                                                         
+Rufus                               4.14           pbatard                         C:\Users\ehsan\AppData\Local\Microsoft\WinGet\Packages\Rufus.Rufus_Microsoft.Winget.Source_8wekyb3d8bbwe
+Tesla Browser                       148.0.7778.97  Tesla Browser LTD.              C:\Users\ehsan\AppData\Local\Programs\TeslaBrowser                                                      
+uTorrent Web                        1.4.0          BitTorrent Limited                                                                                                                      
+Wand                                12.49.0        WeMod                           C:\Users\ehsan\AppData\Local\WeMod                                                                      
+Python 3.10.0 (64-bit)              3.10.150.0     Python Software Foundation                                                                                                              
+MSYS2                               20260611       The MSYS2 Developers            C:\msys64                                                                                               
+Microsoft Visual Studio Code (User) 1.146.0        Microsoft Corporation           C:\Users\ehsan\AppData\Local\Programs\Microsoft VS Code\                                                
+DLSS ENABLER MANAGER version 1.5.1  1.5.1          NODIX TACH                      C:\Users\ehsan\AppData\Local\Programs\DLSS ENABLER MANAGER\                                             
+
+
+
+
+===========================================================================
+8. TEMP FILE INVENTORY
+===========================================================================
+PATH: C:\Users\ehsan\AppData\Local\Temp
+TOTAL: 5.979 GB
+OLDER THAN 30 DAYS: 277 files
+PATH: C:\tmp
+TOTAL: 0.702 GB
+OLDER THAN 30 DAYS: 0 files
+PATH: C:\OneDriveTemp
+TOTAL: 0.536 GB
+OLDER THAN 30 DAYS: 50 files
+
+===========================================================================
+9. SCAN LIMITATIONS
+===========================================================================
+Some protected, locked, or inaccessible files may not be included.
+Folder sizes may overlap if nested folders are counted separately.
+
+===========================================================================
+10. OUTPUT FILES
+===========================================================================
+Main report: C:\Users\ehsan\Desktop\Windows-Storage-Audit\Storage-Audit-20261113-141512.txt
+Large files CSV: C:\Users\ehsan\Desktop\Windows-Storage-Audit\Large-Files-20261113-141512.csv
+Folder sizes CSV: C:\Users\ehsan\Desktop\Windows-Storage-Audit\Folder-Sizes-20261113-141512.csv
+Scan errors: C:\Users\ehsan\Desktop\Windows-Storage-Audit\Scan-Errors-20261113-141512.csv
+
+Files discovered: 72
+Folder entries: 365
+
+AUDIT COMPLETED
+NO FILES DELETED OR MODIFIED
