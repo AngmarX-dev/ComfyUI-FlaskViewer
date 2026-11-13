@@ -18,6 +18,17 @@ $("upload-files").addEventListener("change",async e=>{const files=e.target.files
 
 async function startStorageScan(){try{const result=await api("/api/library/scan",{method:"POST"});state.scanId=result.job_id;$("scan-panel").hidden=false;$("scan-status").textContent="Scanning "+result.roots.join(", ")+" — this can take time on large drives.";$("scan-stats").textContent="";$("scan-results").textContent="";$("scan-storage").disabled=true;pollStorageScan();}catch(e){toast(e.message);}}
 async function pollStorageScan(){if(!state.scanId)return;try{const job=await api("/api/library/scan/"+encodeURIComponent(state.scanId));$("scan-status").textContent=job.status==="completed"?"Scan complete":job.status==="cancelled"?"Scan cancelled":"Scanning: "+(job.current_path||job.roots.join(", "));$("scan-stats").textContent="Files: "+job.files.toLocaleString()+" · Folders: "+job.folders.toLocaleString()+" · Enumerated size: "+bytes(job.bytes)+" · Access errors: "+job.error_count;if(job.result){renderScanResults(job.result);clearInterval(state.scanTimer);state.scanTimer=null;$("scan-storage").disabled=false;$("cancel-scan").hidden=true;}else{state.scanTimer=setTimeout(pollStorageScan,1000);}}catch(e){$("scan-status").textContent=e.message;clearInterval(state.scanTimer);state.scanTimer=null;$("scan-storage").disabled=false;}}
-function renderScanResults(result){const top=(result.largest_files||[]).slice(0,10).map(x=>'<tr><td>'+esc(x.path)+'</td><td>'+bytes(x.size)+'</td></tr>').join("");const folders=(result.top_folders||[]).slice(0,10).map(x=>'<tr><td>'+esc(x.root+" · "+x.folder)+'</td><td>'+bytes(x.bytes)+'</td></tr>').join("");$("scan-results").innerHTML='<div class="scan-result"><strong>Largest files</strong><table class="scan-table">'+(top||'<tr><td>No files found</td></tr>')+'</table></div><div class="scan-result"><strong>Largest top-level folders</strong><table class="scan-table">'+(folders||'<tr><td>No folders found</td></tr>')+'</table></div><div class="scan-result"><strong>Volumes scanned</strong>'+result.volumes.map(v=>'<p>'+esc(v.root)+' · '+bytes(v.bytes)+' enumerated</p>').join("")+'</div>';}
+function renderScanResults(result){
+ const rows=(items,left,right)=>items.map(x=>'<tr><td>'+esc(left(x))+'</td><td>'+esc(right(x))+'</td></tr>').join("");
+ const top=rows((result.largest_files||[]).slice(0,10),x=>x.path,x=>bytes(x.size));
+ const folders=rows((result.top_folders||[]).slice(0,10),x=>x.root+" · "+x.folder,x=>bytes(x.bytes));
+ const exts=rows((result.extensions||[]).slice(0,10),x=>x.extension,x=>x.files.toLocaleString()+" · "+bytes(x.bytes));
+ const errors=(result.errors||[]).slice(0,8).map(x=>'<p>'+esc(x.error)+' · '+esc(x.path)+'</p>').join("");
+ $("scan-results").innerHTML=
+ '<div class="scan-result"><strong>Largest files</strong><table class="scan-table">'+(top||'<tr><td>No files found</td></tr>')+'</table></div>'+
+ '<div class="scan-result"><strong>Largest top-level folders</strong><table class="scan-table">'+(folders||'<tr><td>No folders found</td></tr>')+'</table></div>'+
+ '<div class="scan-result"><strong>File types · count · size</strong><table class="scan-table">'+(exts||'<tr><td>No file types found</td></tr>')+'</table></div>'+
+ '<div class="scan-result"><strong>Access errors ('+result.error_count+')</strong>'+(errors||'<p>No access errors recorded.</p>')+'</div>';
+}
 $("scan-storage").addEventListener("click",startStorageScan);
 $("cancel-scan").addEventListener("click",async()=>{if(!state.scanId)return;try{await api("/api/library/scan/"+encodeURIComponent(state.scanId)+"/cancel",{method:"POST"});$("scan-status").textContent="Cancellation requested…";}catch(e){toast(e.message);}});
