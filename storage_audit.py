@@ -94,7 +94,7 @@ def _scan_worker(job_id, roots):
         nonlocal error_count
         error_count += 1
         if len(errors) < 5000:
-            record_error(path, exc)
+            errors.append({"path": path, "error": str(exc)[:300]})
     scanned_bytes = 0
     files = folders = 0
     started = time.monotonic()
