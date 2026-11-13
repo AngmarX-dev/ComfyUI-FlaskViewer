@@ -32,4 +32,4 @@ The FlaskViewer server has no authentication layer. Keep it bound to `127.0.0.1`
 Existing `config.json` fields: `host`, `port`, `keep_history`, `comfy_url`, and `comfy_input_dir`.
 
 ## Validation
-Run Python syntax compilation, JavaScript syntax checks, and the included unit tests. Runtime verification must be performed inside the target ComfyUI installation because ComfyUI directory helpers and lifecycle are supplied by the host application.
+Run Python syntax compilation and JavaScript syntax checks through GitHub Actions. Runtime verification must be performed inside the target ComfyUI installation because ComfyUI directory helpers and lifecycle are supplied by the host application.

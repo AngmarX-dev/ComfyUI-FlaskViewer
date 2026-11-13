@@ -403,6 +403,12 @@ def _create_app():
             return jsonify({"error": "denoise must be 0–1 and batch size 1–8"}), 400
         if len(sampler_name) > 80 or len(scheduler) > 80 or len(filename_prefix) > 80:
             return jsonify({"error": "sampler, scheduler and filename prefix must be at most 80 characters"}), 400
+        if not filename_prefix or filename_prefix in (".", "..") or any(
+            ch in filename_prefix for ch in ("/", "\\", "\x00")
+        ):
+            return jsonify({"error": "filename prefix must be a simple name without path separators"}), 400
+        if len(prompt_text) > 12000 or len(neg_text) > 12000:
+            return jsonify({"error": "each prompt field must be at most 12000 characters"}), 400
         if seed <= 0:
             seed = int(time.time_ns() % (2 ** 32))
 
