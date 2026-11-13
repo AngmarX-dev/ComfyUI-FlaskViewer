@@ -22,6 +22,4 @@ jobs:
       - name: Compile Python
         run: python -m compileall -q .
       - name: Check JavaScript syntax
-        run: node --check site/app.js && node --check site/library.js && node --check web/viewer_panel.js
-      - name: Run file-library tests
-        run: python -m unittest discover -s tests -v
+        run: node --check site/app.js && node --check web/viewer_panel.js

@@ -14,7 +14,6 @@ from PIL import Image
 from flask import Flask, send_from_directory, jsonify, request, Response
 from werkzeug.serving import make_server
 
-from .file_manager import create_file_manager_blueprint
 
 # ---------- Paths ----------
 
@@ -170,7 +169,9 @@ def _set_node_text(node, text):
     return False
 
 def _inject_workflow(graph, prompt, negative_prompt, width, height,
-                     seed, steps, cfg, image_filenames):
+                     seed, steps, cfg, image_filenames, sampler_name=None,
+                     scheduler=None, denoise=None, batch_size=None,
+                     checkpoint=None, filename_prefix=None):
     pos_ids, neg_ids = [], []
     sampler_types = {
         "KSampler", "KSamplerAdvanced", "SamplerCustom",
@@ -209,9 +210,14 @@ def _inject_workflow(graph, prompt, negative_prompt, width, height,
         if steps:
             try: inp["steps"] = int(steps)
             except (TypeError, ValueError): pass
-        if cfg:
-            try: inp["cfg"] = float(cfg)
-            except (TypeError, ValueError): pass
+        if cfg is not None and "cfg" in inp:
+            inp["cfg"] = float(cfg)
+        if sampler_name and "sampler_name" in inp:
+            inp["sampler_name"] = sampler_name
+        if scheduler and "scheduler" in inp:
+            inp["scheduler"] = scheduler
+        if denoise is not None and "denoise" in inp:
+            inp["denoise"] = float(denoise)
 
     if prompt is not None:
         for nid in pos_ids:
@@ -240,12 +246,18 @@ def _inject_workflow(graph, prompt, negative_prompt, width, height,
         ct = node.get("class_type", "")
         inp = node.setdefault("inputs", {})
         if ct in latent_types:
-            if width:
-                try: inp["width"] = int(width)
-                except (TypeError, ValueError): pass
-            if height:
-                try: inp["height"] = int(height)
-                except (TypeError, ValueError): pass
+            if width is not None:
+                inp["width"] = int(width)
+            if height is not None:
+                inp["height"] = int(height)
+            if batch_size is not None and "batch_size" in inp:
+                inp["batch_size"] = int(batch_size)
+        elif ct == "CheckpointLoaderSimple" and checkpoint:
+            if "ckpt_name" in inp:
+                inp["ckpt_name"] = checkpoint
+        elif ct == "SaveImage" and filename_prefix:
+            if "filename_prefix" in inp:
+                inp["filename_prefix"] = filename_prefix
         elif ct == "LoadImage" and remaining_images:
             inp["image"] = remaining_images.pop(0)
 
@@ -281,15 +293,10 @@ def _display_url(host, port):
 def _create_app():
     app = Flask(__name__, static_folder=_SITE_DIR, static_url_path="/static")
     app.config["MAX_CONTENT_LENGTH"] = 64 * 1024 * 1024
-    app.register_blueprint(create_file_manager_blueprint(_MODULE_DIR, _ensure_dirs))
 
     @app.route("/")
     def index():
         return send_from_directory(_SITE_DIR, "index.html")
-
-    @app.route("/library")
-    def library():
-        return send_from_directory(_SITE_DIR, "library.html")
 
     @app.route("/ping")
     def ping():
@@ -373,11 +380,29 @@ def _create_app():
         width = request.form.get("width")
         height = request.form.get("height")
         steps = request.form.get("steps")
-        cfg = request.form.get("cfg")
+        cfg = request.form.get("cfg", "7")
+        sampler_name = (request.form.get("sampler_name") or "euler").strip()
+        scheduler = (request.form.get("scheduler") or "normal").strip()
+        denoise = request.form.get("denoise", "1")
+        batch_size = request.form.get("batch_size", "1")
+        checkpoint = (request.form.get("checkpoint") or "").strip()
+        filename_prefix = (request.form.get("filename_prefix") or "flask_web").strip()
         try:
-            seed = int(request.form.get("seed") or 0)
-        except ValueError:
-            seed = 0
+            width_i, height_i = int(width or 512), int(height or 512)
+            steps_i, seed = int(steps or 20), int(request.form.get("seed") or 0)
+            cfg_f, denoise_f, batch_i = float(cfg), float(denoise), int(batch_size)
+        except (TypeError, ValueError):
+            return jsonify({"error": "invalid numeric generation parameter"}), 400
+        if not (64 <= width_i <= 4096 and 64 <= height_i <= 4096):
+            return jsonify({"error": "width and height must be between 64 and 4096"}), 400
+        if width_i % 8 or height_i % 8:
+            return jsonify({"error": "width and height must be divisible by 8"}), 400
+        if not (1 <= steps_i <= 200 and 0 <= cfg_f <= 30):
+            return jsonify({"error": "steps must be 1–200 and CFG must be 0–30"}), 400
+        if not (0.0 <= denoise_f <= 1.0 and 1 <= batch_i <= 8):
+            return jsonify({"error": "denoise must be 0–1 and batch size 1–8"}), 400
+        if len(sampler_name) > 80 or len(scheduler) > 80 or len(filename_prefix) > 80:
+            return jsonify({"error": "sampler, scheduler and filename prefix must be at most 80 characters"}), 400
         if seed <= 0:
             seed = int(time.time_ns() % (2 ** 32))
 
@@ -396,8 +421,9 @@ def _create_app():
             saved_images.append(unique)
 
         graph = _inject_workflow(
-            graph, prompt_text, neg_text, width, height,
-            seed, steps, cfg, saved_images,
+            graph, prompt_text, neg_text, width_i, height_i,
+            seed, steps_i, cfg_f, saved_images, sampler_name,
+            scheduler, denoise_f, batch_i, checkpoint, filename_prefix,
         )
 
         # DEBUG: show the encoder text nodes after injection
