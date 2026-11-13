@@ -1,0 +1,22 @@
+name: Storage Audit Checks
+
+on:
+  push:
+    branches: [feature/full-drive-storage-audit]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile Python modules
+        run: python -m py_compile __init__.py flask_image_viewer.py storage_audit.py
+      - name: Check storage module imports
+        run: |
+          python -m pip install Flask
+          python -c "import storage_audit; print('storage audit module import OK')"
